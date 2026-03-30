@@ -83,14 +83,14 @@ export default function HomePage() {
 
       {/* Listen By Mood — light section */}
       <section className="section-light border-b border-[#DAC8A8] py-12 px-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-[960px] mx-auto">
           <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A7850] mb-1">
             What are you listening for?
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] italic text-[24px] text-[#3A2010] mb-7">
             Find the right raga
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[12px]">
             <UseCaseCard
               title="For Sleep"
               body="Late-night ragas designed to quiet the mind and ease the body into rest. Malkauns, Darbari, Bageshree."
@@ -122,7 +122,7 @@ export default function HomePage() {
           <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-[#7A6040] mb-8">
             Arranged by time of day, from pre-dawn to deep night.
           </p>
-          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[10px]">
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[12px]">
             {sortedRagas.map((raga) => (
               <RagaCard key={raga.slug} raga={raga} />
             ))}
