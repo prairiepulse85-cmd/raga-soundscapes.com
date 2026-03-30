@@ -99,7 +99,6 @@ export default async function RagaPage({
       <SchemaMarkup schema={schema} />
 
       <main className="max-w-[720px] mx-auto px-6 bg-rs-bg">
-        {/* Breadcrumb */}
         <div className="pt-8">
           <Link
             href="/#ragas"
@@ -109,21 +108,17 @@ export default async function RagaPage({
           </Link>
         </div>
 
-        {/* H1 */}
-        <h1 className="font-[family-name:var(--font-cormorant)] italic text-[36px] sm:text-[48px] text-rs-text mt-3 mb-6">
+        <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-rs-text mt-3 mb-6">
           Raga {raga.name}
         </h1>
 
-        {/* Meta Strip */}
         <RagaMetaStrip raga={raga} />
 
-        {/* Description */}
         <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10">
           {raga.description}
         </p>
 
-        {/* YouTube CTA Block */}
-        <div className="bg-rs-surface border border-rs-border border-l-[3px] border-l-rs-accent rounded-[2px] p-6 mb-12">
+        <div className="bg-rs-surface border border-rs-border border-t-2 border-t-rs-accent rounded-[2px] p-6 mb-12">
           <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-2">
             Listen now
           </p>
@@ -131,7 +126,7 @@ export default async function RagaPage({
             href={raga.youtubeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="block font-[family-name:var(--font-cormorant)] text-[16px] text-rs-accent hover:underline mb-1"
+            className="block font-[family-name:var(--font-cinzel)] text-[16px] text-rs-accent hover:underline mb-1"
           >
             Raga {raga.name} — Meditation Soundscape →
           </a>
@@ -140,7 +135,7 @@ export default async function RagaPage({
               href={raga.youtubeSleepUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block font-[family-name:var(--font-cormorant)] text-[16px] text-rs-accent hover:underline"
+              className="block font-[family-name:var(--font-cinzel)] text-[16px] text-rs-accent hover:underline"
             >
               Raga {raga.name} — Sleep Edition →
             </a>
@@ -161,14 +156,10 @@ export default async function RagaPage({
           </a>
         </div>
 
-        {/* Related Ragas */}
         <RelatedRagas ragas={related} />
       </main>
 
-      {/* Subscribe CTA */}
       <SubscribeCTA />
-
-      {/* Footer */}
       <Footer />
     </>
   )
