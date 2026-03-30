@@ -34,12 +34,12 @@ export default function HomePage() {
     <>
       <SchemaMarkup schema={homeSchema} />
 
-      {/* Hero */}
+      {/* Hero — stays dark */}
       <section className="relative min-h-screen flex items-center justify-center bg-rs-bg">
         {/* Tanpura string decorative line */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] h-px pointer-events-none"
-          style={{ backgroundColor: 'rgba(200, 145, 58, 0.12)' }}
+          style={{ backgroundColor: 'rgba(212, 168, 85, 0.12)' }}
         />
         <div className="relative z-10 text-center px-6">
           <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.18em] text-rs-hint mb-4">
@@ -66,13 +66,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Proof Strip */}
+      {/* Proof Strip — stays dark */}
       <ProofStrip />
 
-      {/* What is a Raga */}
-      <section className="bg-rs-surface2 py-9 px-10">
+      {/* What is a Raga — light section */}
+      <section className="section-light py-9 px-10">
         <div className="max-w-[600px] mx-auto">
-          <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85]">
+          <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-[#6A5038] leading-[1.85]">
             A raga is not just a melody — it is a time, a mood, an emotional
             world with its own grammar. Each raga belongs to a specific hour of
             the day and carries a distinct <em>rasa</em> — the emotional essence
@@ -81,13 +81,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Listen By Mood */}
-      <section className="bg-rs-bg border-b border-rs-border py-12 px-10">
+      {/* Listen By Mood — light section */}
+      <section className="section-light border-b border-[#DAC8A8] py-12 px-10">
         <div className="max-w-5xl mx-auto">
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-1">
+          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A7850] mb-1">
             What are you listening for?
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] italic text-[24px] text-rs-text mb-7">
+          <h2 className="font-[family-name:var(--font-cormorant)] italic text-[24px] text-[#3A2010] mb-7">
             Find the right raga
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[10px]">
@@ -110,16 +110,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Raga Library */}
-      <section id="ragas" className="bg-rs-bg py-16 px-10">
+      {/* Raga Library — light section */}
+      <section id="ragas" className="section-light py-16 px-10">
         <div className="max-w-5xl mx-auto">
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-1">
+          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A7850] mb-1">
             The raga library
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant)] italic text-[28px] text-rs-text mb-2">
+          <h2 className="font-[family-name:var(--font-cormorant)] italic text-[28px] text-[#3A2010] mb-2">
             Explore the Ragas
           </h2>
-          <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-rs-muted mb-8">
+          <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-[#7A6040] mb-8">
             Arranged by time of day, from pre-dawn to deep night.
           </p>
           <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[10px]">
@@ -130,10 +130,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Closing CTA */}
+      {/* Closing CTA — stays dark */}
       <SubscribeCTA />
 
-      {/* Footer */}
+      {/* Footer — stays dark */}
       <Footer />
     </>
   )
