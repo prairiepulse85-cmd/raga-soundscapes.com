@@ -93,17 +93,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[12px]">
             <UseCaseCard
               title="For Sleep"
-              body="Late-night ragas designed to quiet the mind and ease the body into rest. Malkauns, Darbari, Bageshree."
+              body="Late-night ragas designed to quiet the mind. Malkauns, Darbari, Bageshree."
               href="/listen/sleep"
             />
             <UseCaseCard
               title="For Morning Meditation"
-              body="Dawn and early morning ragas to begin the day in stillness. Bhairav, Lalit, Todi, Ahir Bhairav."
+              body="Dawn ragas to begin the day in stillness. Bhairav, Lalit, Todi."
               href="/listen/morning"
             />
             <UseCaseCard
               title="For Focus & Deep Work"
-              body="Ragas suited to concentration and creative work. Yaman, Bihag, Kafi, Bhimpalasi."
+              body="Ragas for concentration and creative work. Yaman, Bihag, Kafi."
               href="/listen/focus"
             />
           </div>
