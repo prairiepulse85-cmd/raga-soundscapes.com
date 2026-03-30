@@ -15,7 +15,7 @@ export default function RagaCard({ raga }: { raga: Raga }) {
           {raga.rasa}
         </p>
         <p className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint mt-2">
-          {raga.instruments.join(' \u00b7 ')}
+          {raga.instruments.join(' · ')}
         </p>
       </div>
     </Link>

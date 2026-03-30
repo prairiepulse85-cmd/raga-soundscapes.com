@@ -18,9 +18,9 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Raga Soundscapes \u2014 Indian Classical Meditation Music',
+  title: 'Raga Soundscapes — Indian Classical Meditation Music',
   description:
-    'Original raga soundscapes for stillness, sleep and focus. A growing library of 14 Indian classical ragas \u2014 each designed for a specific time of day, mood, and purpose. On YouTube.',
+    'Original raga soundscapes for stillness, sleep and focus. A growing library of 14 Indian classical ragas — each designed for a specific time of day, mood, and purpose. On YouTube.',
   keywords: [
     'raga meditation music',
     'indian classical meditation',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'raga soundscape',
   ],
   openGraph: {
-    title: 'Raga Soundscapes \u2014 Indian Classical Meditation Music',
+    title: 'Raga Soundscapes — Indian Classical Meditation Music',
     description:
       'A growing library of 14 Indian classical ragas. Each soundscape designed for a specific time, mood, and purpose.',
     url: 'https://ragasoundscapes.com',

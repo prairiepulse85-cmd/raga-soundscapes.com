@@ -17,7 +17,7 @@ export default function UseCaseCard({ title, body, href }: UseCaseCardProps) {
           {body}
         </p>
         <span className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-accent">
-          Explore \u2192
+          Explore →
         </span>
       </div>
     </Link>

@@ -19,7 +19,7 @@ export default function SubscribeCTA() {
             rel="noopener noreferrer"
             className="inline-block border border-rs-accent text-rs-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-rs-accent hover:text-rs-bg transition-colors duration-200"
           >
-            Subscribe on YouTube \u2192
+            Subscribe on YouTube →
           </a>
           <span className="text-[12px] font-[family-name:var(--font-dm-sans)] text-rs-hint">
             {siteMeta.channelHandle}

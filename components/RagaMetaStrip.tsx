@@ -4,7 +4,7 @@ export default function RagaMetaStrip({ raga }: { raga: Raga }) {
   const fields = [
     { label: 'Time', value: raga.timeOfDay },
     { label: 'Mood', value: raga.rasa },
-    { label: 'Instruments', value: raga.instruments.join(' \u00b7 ') },
+    { label: 'Instruments', value: raga.instruments.join(' · ') },
   ]
 
   return (
