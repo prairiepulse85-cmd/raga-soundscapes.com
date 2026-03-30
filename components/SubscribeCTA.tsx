@@ -2,10 +2,10 @@ import { siteMeta } from '@/data/site-meta'
 
 export default function SubscribeCTA() {
   return (
-    <section className="bg-rs-surface2 border-t border-rs-border py-16 px-10">
+    <section className="bg-rs-surface2 border-t-2 border-t-[#C8A830] py-16 px-10">
       <div className="max-w-[480px] mx-auto text-center">
         <div className="w-10 h-px bg-rs-border mx-auto mb-6" />
-        <h2 className="font-[family-name:var(--font-cormorant)] italic text-[30px] text-rs-text mb-4">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-[30px] text-rs-text mb-4">
           Find your stillness.
         </h2>
         <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.7] mb-7">

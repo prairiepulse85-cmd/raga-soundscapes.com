@@ -33,7 +33,7 @@ export async function GET(req: NextRequest) {
     (
       <div
         style={{
-          background: '#2E1E10',
+          background: '#0D1828',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -45,7 +45,7 @@ export async function GET(req: NextRequest) {
       >
         <div
           style={{
-            color: '#7A6048',
+            color: '#4A6080',
             fontSize: 14,
             letterSpacing: 8,
             textTransform: 'uppercase',
@@ -56,9 +56,8 @@ export async function GET(req: NextRequest) {
         </div>
         <div
           style={{
-            color: '#F0DEC0',
+            color: '#EAD898',
             fontSize: ragaSlug ? 64 : 52,
-            fontStyle: 'italic',
             textAlign: 'center',
             lineHeight: 1.2,
           }}
@@ -67,7 +66,7 @@ export async function GET(req: NextRequest) {
         </div>
         <div
           style={{
-            color: '#D4A855',
+            color: '#C8A830',
             fontSize: 16,
             letterSpacing: 4,
             textTransform: 'uppercase',
