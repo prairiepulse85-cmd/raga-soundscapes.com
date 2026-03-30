@@ -23,7 +23,7 @@ export async function generateMetadata({
   const raga = getRagaBySlug(slug)
   if (!raga) return {}
 
-  const desc = `Raga ${raga.name} meditation music \u2014 ${raga.rasa.toLowerCase()}. A ${raga.timeOfDay.toLowerCase()} raga from the Hindustani classical tradition, played on ${raga.instruments.join(' and ')}. Listen on YouTube.`
+  const desc = `Raga ${raga.name} meditation music — ${raga.rasa.toLowerCase()}. A ${raga.timeOfDay.toLowerCase()} raga from the Hindustani classical tradition, played on ${raga.instruments.join(' and ')}. Listen on YouTube.`
     .replace(/\s+/g, ' ')
     .trim()
 
@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: `Raga ${raga.name} Meditation Music | Raga Soundscapes`,
     description: desc.slice(0, 155),
     openGraph: {
-      title: `Raga ${raga.name} \u2014 ${raga.rasa}`,
+      title: `Raga ${raga.name} — ${raga.rasa}`,
       description: desc.slice(0, 155),
       url: `https://ragasoundscapes.com/raga/${raga.slug}`,
       siteName: 'Raga Soundscapes',
@@ -105,7 +105,7 @@ export default async function RagaPage({
             href="/#ragas"
             className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
           >
-            \u2190 All Ragas
+            ← All Ragas
           </Link>
         </div>
 
@@ -133,7 +133,7 @@ export default async function RagaPage({
             rel="noopener noreferrer"
             className="block font-[family-name:var(--font-cormorant)] text-[16px] text-rs-accent hover:underline mb-1"
           >
-            Raga {raga.name} \u2014 Meditation Soundscape \u2192
+            Raga {raga.name} — Meditation Soundscape →
           </a>
           {raga.youtubeSleepUrl && (
             <a
@@ -142,7 +142,7 @@ export default async function RagaPage({
               rel="noopener noreferrer"
               className="block font-[family-name:var(--font-cormorant)] text-[16px] text-rs-accent hover:underline"
             >
-              Raga {raga.name} \u2014 Sleep Edition \u2192
+              Raga {raga.name} — Sleep Edition →
             </a>
           )}
 
@@ -157,7 +157,7 @@ export default async function RagaPage({
             rel="noopener noreferrer"
             className="inline-block border border-rs-accent text-rs-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-rs-accent hover:text-rs-bg transition-colors duration-200"
           >
-            Subscribe on YouTube \u2192
+            Subscribe on YouTube →
           </a>
         </div>
 
