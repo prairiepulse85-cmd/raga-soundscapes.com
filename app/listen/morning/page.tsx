@@ -7,14 +7,14 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Ragas for Morning Meditation \u2014 Indian Classical Music | Raga Soundscapes',
+  title: 'Ragas for Morning Meditation — Indian Classical Music | Raga Soundscapes',
   description:
-    'Morning ragas from the Hindustani classical tradition \u2014 Bhairav, Lalit, Todi, Ahir Bhairav. Each designed for the specific emotional quality of the early hours.',
+    'Morning ragas from the Hindustani classical tradition — Bhairav, Lalit, Todi, Ahir Bhairav. Each designed for the specific emotional quality of the early hours.',
   alternates: { canonical: 'https://ragasoundscapes.com/listen/morning' },
   openGraph: {
-    title: 'Ragas for Morning Meditation \u2014 Indian Classical Music | Raga Soundscapes',
+    title: 'Ragas for Morning Meditation — Indian Classical Music | Raga Soundscapes',
     description:
-      'Morning ragas from the Hindustani classical tradition \u2014 Bhairav, Lalit, Todi, Ahir Bhairav.',
+      'Morning ragas from the Hindustani classical tradition — Bhairav, Lalit, Todi, Ahir Bhairav.',
     url: 'https://ragasoundscapes.com/listen/morning',
     siteName: 'Raga Soundscapes',
     images: [{ url: '/api/og?page=morning', width: 1200, height: 630 }],
@@ -64,7 +64,7 @@ export default function MorningPage() {
             href="/#ragas"
             className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
           >
-            \u2190 All Ragas
+            ← All Ragas
           </Link>
         </div>
 
@@ -75,7 +75,7 @@ export default function MorningPage() {
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>
             The earliest ragas in the Hindustani tradition are not simply slow or
-            quiet \u2014 they are architecturally designed for the pre-dawn and
+            quiet — they are architecturally designed for the pre-dawn and
             morning hours. Bhairav carries the gravity and devotion of the moment
             before sunrise. Lalit holds the mystical darkness of 4am. Todi turns
             the mind inward in a way that no afternoon raga can.

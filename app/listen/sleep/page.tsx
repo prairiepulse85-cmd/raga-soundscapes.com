@@ -7,12 +7,12 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Ragas for Sleep \u2014 Indian Classical Meditation Music | Raga Soundscapes',
+  title: 'Ragas for Sleep — Indian Classical Meditation Music | Raga Soundscapes',
   description:
-    'The best Indian classical ragas for sleep and deep rest. Malkauns, Darbari, Bageshree and more \u2014 each a late-night raga designed to quiet the mind.',
+    'The best Indian classical ragas for sleep and deep rest. Malkauns, Darbari, Bageshree and more — each a late-night raga designed to quiet the mind.',
   alternates: { canonical: 'https://ragasoundscapes.com/listen/sleep' },
   openGraph: {
-    title: 'Ragas for Sleep \u2014 Indian Classical Meditation Music | Raga Soundscapes',
+    title: 'Ragas for Sleep — Indian Classical Meditation Music | Raga Soundscapes',
     description:
       'The best Indian classical ragas for sleep and deep rest. Malkauns, Darbari, Bageshree and more.',
     url: 'https://ragasoundscapes.com/listen/sleep',
@@ -63,7 +63,7 @@ export default function SleepPage() {
             href="/#ragas"
             className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
           >
-            \u2190 All Ragas
+            ← All Ragas
           </Link>
         </div>
 
@@ -74,16 +74,16 @@ export default function SleepPage() {
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>
             In the Indian classical tradition, certain ragas belong exclusively
-            to the hours after midnight \u2014 not because of convention, but because
+            to the hours after midnight — not because of convention, but because
             of their structure. The deep, flattened notes of Malkauns, the
-            measured gravity of Darbari, the quiet yearning of Bageshree \u2014 these
-            are not generalised \u201ccalming music.\u201d They are ragas
+            measured gravity of Darbari, the quiet yearning of Bageshree — these
+            are not generalised “calming music.” They are ragas
             built around the specific quality of the mind in its most restful
             state.
           </p>
           <p>
             Each soundscape in this collection is a 22-minute or longer
-            meditation designed around the raga\u2019s traditional late-night
+            meditation designed around the raga’s traditional late-night
             character. No percussion. No vocals. Just the raga, at the hour it
             was made for.
           </p>

@@ -52,7 +52,7 @@ export default function HomePage() {
             Original raga soundscapes for stillness, sleep and focus
           </p>
           <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-rs-hint max-w-[480px] mx-auto mb-8">
-            A growing library of 14 Indian classical ragas \u2014 each recorded for a
+            A growing library of 14 Indian classical ragas — each recorded for a
             specific time of day, mood, and purpose.
           </p>
           <a
@@ -61,7 +61,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="inline-block border border-rs-accent text-rs-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-rs-accent hover:text-rs-bg transition-colors duration-200"
           >
-            Listen on YouTube \u2192
+            Listen on YouTube →
           </a>
         </div>
       </section>
@@ -73,9 +73,9 @@ export default function HomePage() {
       <section className="bg-rs-surface2 py-9 px-10">
         <div className="max-w-[600px] mx-auto">
           <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85]">
-            A raga is not just a melody \u2014 it is a time, a mood, an emotional
+            A raga is not just a melody — it is a time, a mood, an emotional
             world with its own grammar. Each raga belongs to a specific hour of
-            the day and carries a distinct <em>rasa</em> \u2014 the emotional essence
+            the day and carries a distinct <em>rasa</em> — the emotional essence
             it evokes. These soundscapes honour that tradition.
           </p>
         </div>

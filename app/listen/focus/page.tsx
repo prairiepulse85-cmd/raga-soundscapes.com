@@ -9,7 +9,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Indian Classical Music for Focus & Deep Work | Raga Soundscapes',
   description:
-    'Ragas for concentration, creative work, and deep focus. Yaman, Bihag, Kafi, Bhimpalasi \u2014 Indian classical soundscapes designed for sustained attention.',
+    'Ragas for concentration, creative work, and deep focus. Yaman, Bihag, Kafi, Bhimpalasi — Indian classical soundscapes designed for sustained attention.',
   alternates: { canonical: 'https://ragasoundscapes.com/listen/focus' },
   openGraph: {
     title: 'Indian Classical Music for Focus & Deep Work | Raga Soundscapes',
@@ -64,7 +64,7 @@ export default function FocusPage() {
             href="/#ragas"
             className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
           >
-            \u2190 All Ragas
+            ← All Ragas
           </Link>
         </div>
 
@@ -75,14 +75,14 @@ export default function FocusPage() {
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>
             Not all meditation is stillness. Some of the most effective Indian
-            classical ragas for concentration are evening and night ragas \u2014 their
+            classical ragas for concentration are evening and night ragas — their
             moderate brightness and emotional warmth hold the mind attentive
             without agitation. Yaman opens the evening with clarity and grandeur.
             Bihag is warm and intimate. Kafi has a folk accessibility that makes
             it easy to work alongside.
           </p>
           <p>
-            These soundscapes are designed for extended listening \u2014 for creative
+            These soundscapes are designed for extended listening — for creative
             work, deep study, or any task that requires the mind to be present
             without being stimulated. They are instrumental, uninterrupted, and
             long enough to settle into.
