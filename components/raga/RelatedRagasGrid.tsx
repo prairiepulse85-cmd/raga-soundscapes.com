@@ -4,14 +4,14 @@ import RagaCard from '@/components/shared/RagaCard'
 export default function RelatedRagasGrid({ ragas }: { ragas: Raga[] }) {
   if (ragas.length === 0) return null
   return (
-    <section className="mb-12">
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted/60 mb-4">
-        You might also like
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        {ragas.map((raga) => (
-          <RagaCard key={raga.slug} raga={raga} />
-        ))}
+    <section style={{ borderTop: '1px solid var(--rs-border)', padding: '48px 0' }}>
+      <div className="rs-container" style={{ maxWidth: '720px' }}>
+        <p className="rs-section-label">You might also like</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1px', background: 'var(--rs-border)', border: '1px solid var(--rs-border)' }}>
+          {ragas.map((raga) => (
+            <RagaCard key={raga.slug} raga={raga} />
+          ))}
+        </div>
       </div>
     </section>
   )

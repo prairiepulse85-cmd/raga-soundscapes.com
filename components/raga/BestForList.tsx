@@ -1,19 +1,16 @@
 export default function BestForList({ items }: { items: string[] }) {
   return (
-    <div className="mb-8">
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted/60 mb-3">
+    <div style={{ marginBottom: '32px' }}>
+      <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
         Best for
       </p>
-      <ul className="flex flex-wrap gap-2">
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
         {items.map((item) => (
-          <li
-            key={item}
-            className="text-[12px] font-[family-name:var(--font-dm-sans)] text-muted border border-border px-3 py-1 rounded-full"
-          >
+          <span key={item} style={{ fontSize: '12px', color: 'var(--rs-muted)', border: '1px solid var(--rs-border)', padding: '4px 14px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             {item}
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }

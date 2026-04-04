@@ -21,64 +21,57 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
     })
   }, [ragas, timeFilter, moodFilter, search])
 
+  const selectStyle: React.CSSProperties = {
+    background: 'var(--rs-surface)',
+    border: '1px solid var(--rs-border)',
+    color: 'var(--rs-muted)',
+    fontSize: '13px',
+    padding: '8px 12px',
+    fontFamily: 'var(--font-dm-sans), sans-serif',
+    outline: 'none',
+  }
+
   return (
-    <section id="ragas" className="bg-bg py-14 px-6 border-t border-border">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-1">
-          The raga library
-        </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[28px] text-text mb-2">
-          Explore the Ragas
-        </h2>
-        <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-muted/70 mb-6">
+    <section id="ragas" className="rs-section" style={{ borderTop: '1px solid var(--rs-border)' }}>
+      <div className="rs-container">
+        <p className="rs-section-label">The raga library</p>
+        <h2 className="rs-section-title" style={{ fontSize: '28px', marginBottom: '8px' }}>Explore the Ragas</h2>
+        <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--rs-hint)', marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           Arranged by time of day, from pre-dawn to deep night.
         </p>
 
-        <div className="flex flex-wrap items-center gap-3 mb-8">
-          <select
-            value={timeFilter}
-            onChange={(e) => setTimeFilter(e.target.value)}
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent"
-          >
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center', marginBottom: '40px' }}>
+          <select value={timeFilter} onChange={(e) => setTimeFilter(e.target.value)} style={selectStyle}>
             <option value="">All times</option>
             {times.map(t => <option key={t} value={t}>{t}</option>)}
           </select>
-
-          <select
-            value={moodFilter}
-            onChange={(e) => setMoodFilter(e.target.value)}
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent"
-          >
+          <select value={moodFilter} onChange={(e) => setMoodFilter(e.target.value)} style={selectStyle}>
             <option value="">All moods</option>
             {moods.map(m => <option key={m} value={m}>{m}</option>)}
           </select>
-
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search by name..."
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent placeholder:text-muted/40 w-full sm:w-48"
-          />
-
+          <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search ragas..." style={{ ...selectStyle, width: '200px' }} />
           {(timeFilter || moodFilter || search) && (
-            <button
-              onClick={() => { setTimeFilter(''); setMoodFilter(''); setSearch('') }}
-              className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.1em] text-accent hover:text-text transition-colors"
-            >
+            <button onClick={() => { setTimeFilter(''); setMoodFilter(''); setSearch('') }}
+              style={{ fontSize: '11px', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--rs-accent)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Reset
             </button>
           )}
         </div>
 
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-3">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: '1px',
+          background: 'var(--rs-border)',
+          border: '1px solid var(--rs-border)',
+        }}>
           {filtered.map((raga) => (
             <RagaCard key={raga.slug} raga={raga} />
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-center text-[14px] font-[family-name:var(--font-dm-sans)] text-muted/60 py-12">
+          <p style={{ textAlign: 'center', fontSize: '15px', color: 'var(--rs-hint)', padding: '60px 0', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             No ragas match your filters.
           </p>
         )}

@@ -1,27 +1,40 @@
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center bg-bg">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-px pointer-events-none bg-accent/10" />
-      <div className="relative z-10 text-center px-6">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.18em] text-muted mb-5">
-          Indian classical meditation music
-        </p>
-        <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-text tracking-[0.08em] mb-4">
+    <section className="rs-section" style={{ textAlign: 'center' }}>
+      <div className="rs-container" style={{ maxWidth: '720px' }}>
+        <p className="rs-section-label">Indian classical meditation music</p>
+        <h1 style={{
+          fontSize: 'clamp(40px, 7vw, 68px)',
+          marginBottom: '20px',
+          fontFamily: 'var(--font-cinzel), serif',
+          color: 'var(--rs-text)',
+          letterSpacing: '0.08em',
+          lineHeight: 1.1,
+        }}>
           Raga Soundscapes
         </h1>
-        <p className="text-[16px] font-[family-name:var(--font-dm-sans)] text-muted mb-2 max-w-[520px] mx-auto">
+        <p style={{ color: 'var(--rs-muted)', fontSize: '20px', marginBottom: '10px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           Indian classical soundscapes for calm, focus, and stillness.
         </p>
-        <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-muted/70 mb-8">
+        <p style={{ color: 'var(--rs-hint)', fontSize: '15px', marginBottom: '48px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           Organised by time, mood, and rasa.
         </p>
         <a
           href="https://youtube.com/@ragasoundscapes"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block border border-accent text-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-accent hover:text-bg transition-colors duration-200"
+          style={{
+            border: '1px solid var(--rs-accent)',
+            color: 'var(--rs-accent)',
+            padding: '13px 32px',
+            fontSize: '13px',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            display: 'inline-block',
+            fontFamily: 'var(--font-dm-sans), sans-serif',
+          }}
         >
-          Listen on YouTube &rarr;
+          Listen on YouTube →
         </a>
       </div>
     </section>

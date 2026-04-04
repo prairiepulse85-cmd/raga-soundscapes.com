@@ -10,13 +10,13 @@ export default function RagaMetaStrip({ raga }: { raga: Raga }) {
   ]
 
   return (
-    <div className="flex flex-wrap gap-5 pb-6 border-b border-border mb-8">
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', paddingBottom: '24px', borderBottom: '1px solid var(--rs-border)', marginBottom: '32px' }}>
       {fields.map((field) => (
         <div key={field.label}>
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted/60 mb-1">
+          <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '4px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             {field.label}
           </p>
-          <p className="text-[14px] font-[family-name:var(--font-cinzel)] text-text">
+          <p style={{ fontSize: '14px', color: 'var(--rs-text)', fontFamily: 'var(--font-cinzel), serif' }}>
             {field.value}
           </p>
         </div>

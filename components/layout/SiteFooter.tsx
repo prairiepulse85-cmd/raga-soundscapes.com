@@ -2,46 +2,44 @@ import Link from 'next/link'
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-bg border-t border-border py-10 px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+    <footer style={{ borderTop: '1px solid var(--rs-border)', padding: '48px 0', textAlign: 'center' }}>
+      <div className="rs-container">
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '32px', marginBottom: '32px' }}>
           <div>
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-3">
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Listen by mood
             </p>
-            <div className="flex flex-col gap-2 text-[13px] font-[family-name:var(--font-dm-sans)] text-muted">
-              <Link href="/listen/sleep" className="hover:text-text transition-colors">Sleep</Link>
-              <Link href="/listen/morning" className="hover:text-text transition-colors">Morning</Link>
-              <Link href="/listen/focus" className="hover:text-text transition-colors">Focus</Link>
-              <Link href="/mood/meditation" className="hover:text-text transition-colors">Meditation</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <Link href="/listen/sleep">Sleep Ragas</Link>
+              <Link href="/listen/morning">Morning Ragas</Link>
+              <Link href="/listen/focus">Focus Ragas</Link>
+              <Link href="/mood/meditation">Meditation</Link>
             </div>
           </div>
           <div>
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-3">
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Listen by time
             </p>
-            <div className="flex flex-col gap-2 text-[13px] font-[family-name:var(--font-dm-sans)] text-muted">
-              <Link href="/time/early-morning" className="hover:text-text transition-colors">Early Morning</Link>
-              <Link href="/time/evening" className="hover:text-text transition-colors">Evening</Link>
-              <Link href="/time/night" className="hover:text-text transition-colors">Night</Link>
-              <Link href="/time/late-night" className="hover:text-text transition-colors">Late Night</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <Link href="/time/early-morning">Early Morning</Link>
+              <Link href="/time/evening">Evening</Link>
+              <Link href="/time/night">Night</Link>
+              <Link href="/time/late-night">Late Night</Link>
             </div>
           </div>
           <div>
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-3">
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Raga Soundscapes
             </p>
-            <div className="flex flex-col gap-2 text-[13px] font-[family-name:var(--font-dm-sans)] text-muted">
-              <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer" className="hover:text-text transition-colors">
-                YouTube Channel
-              </a>
-              <Link href="/#ragas" className="hover:text-text transition-colors">Full Library</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+              <Link href="/#ragas">Full Library</Link>
             </div>
           </div>
         </div>
-        <div className="border-t border-border pt-6 text-center">
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] text-muted/60">
-            &copy; Raga Soundscapes &middot; ragasoundscapes.com
+        <div style={{ borderTop: '1px solid var(--rs-border2)', paddingTop: '20px' }}>
+          <p style={{ fontSize: '11px', color: 'var(--rs-border)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            © Raga Soundscapes · ragasoundscapes.com
           </p>
         </div>
       </div>

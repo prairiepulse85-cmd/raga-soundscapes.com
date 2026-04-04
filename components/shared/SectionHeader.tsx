@@ -1,10 +1,10 @@
 export default function SectionHeader({ label, title }: { label: string; title: string }) {
   return (
-    <div className="mb-8">
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-1">
+    <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+      <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#c8913a', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
         {label}
       </p>
-      <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-text">
+      <h2 style={{ fontSize: '42px', color: '#e8d5b7' }}>
         {title}
       </h2>
     </div>

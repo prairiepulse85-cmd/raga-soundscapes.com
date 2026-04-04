@@ -6,8 +6,25 @@ import FeaturedRagasGrid from '@/components/home/FeaturedRagasGrid'
 import BrowseByMoodSection from '@/components/home/BrowseByMoodSection'
 import BrowseByTimeSection from '@/components/home/BrowseByTimeSection'
 import RagaLibraryGrid from '@/components/home/RagaLibraryGrid'
-import SiteFooter from '@/components/layout/SiteFooter'
+import SubscribeCTA from '@/components/SubscribeCTA'
+import Footer from '@/components/Footer'
+import SchemaMarkup from '@/components/SchemaMarkup'
 import { getAllRagas, getFeaturedRagas } from '@/lib/ragas'
+
+const homeSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Raga Soundscapes',
+  url: 'https://ragasoundscapes.com',
+  description:
+    'Original Indian classical raga meditation soundscapes for stillness, sleep and focus.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Raga Soundscapes',
+    url: 'https://ragasoundscapes.com',
+    sameAs: ['https://youtube.com/@ragasoundscapes'],
+  },
+}
 
 export const metadata: Metadata = {
   title: 'Raga Soundscapes — Indian Classical Meditation Music',
@@ -19,6 +36,7 @@ export default function HomePage() {
   const featuredRagas = getFeaturedRagas()
   return (
     <>
+      <SchemaMarkup schema={homeSchema} />
       <HeroSection />
       <RagaIntroSection />
       <FindYourRagaGrid />
@@ -26,7 +44,8 @@ export default function HomePage() {
       <BrowseByMoodSection />
       <BrowseByTimeSection />
       <RagaLibraryGrid ragas={allRagas} />
-      <SiteFooter />
+      <SubscribeCTA />
+      <Footer />
     </>
   )
 }

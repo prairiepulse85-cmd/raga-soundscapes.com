@@ -2,40 +2,25 @@ import type { Raga } from '@/lib/types'
 
 export default function YouTubeCTABlock({ raga }: { raga: Raga }) {
   return (
-    <div className="bg-surface border border-border border-t-2 border-t-accent rounded-[2px] p-6 mb-12">
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted/60 mb-2">
+    <div style={{ background: 'var(--rs-surface)', border: '1px solid var(--rs-border)', borderTop: '2px solid var(--rs-accent)', padding: '24px', marginBottom: '48px' }}>
+      <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '8px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
         Listen now
       </p>
       {raga.isLive ? (
-        <a
-          href={raga.youtubeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block font-[family-name:var(--font-cinzel)] text-[16px] text-accent hover:underline mb-4"
-        >
-          {raga.name} — Meditation Soundscape &rarr;
+        <a href={raga.youtubeUrl} target="_blank" rel="noopener noreferrer"
+          style={{ display: 'block', fontSize: '16px', color: 'var(--rs-accent)', marginBottom: '4px', fontFamily: 'var(--font-cinzel), serif' }}>
+          {raga.name} — Meditation Soundscape →
         </a>
       ) : (
-        <span
-          className="block font-[family-name:var(--font-cinzel)] text-[16px] text-muted/50 mb-4"
-          aria-disabled="true"
-        >
+        <span style={{ display: 'block', fontSize: '16px', color: 'var(--rs-hint)', marginBottom: '4px', fontFamily: 'var(--font-cinzel), serif' }} aria-disabled="true">
           Coming soon on YouTube
         </span>
       )}
-
-      <div className="border-t border-border my-4" />
-
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] text-muted/60 mb-3">
-        Like this soundscape?
-      </p>
-      <a
-        href="https://youtube.com/@ragasoundscapes"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block border border-accent text-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-accent hover:text-bg transition-colors duration-200"
-      >
-        Subscribe on YouTube &rarr;
+      <div style={{ borderTop: '1px solid var(--rs-border)', margin: '16px 0' }} />
+      <p style={{ fontSize: '11px', color: 'var(--rs-hint)', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>Like this soundscape?</p>
+      <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer"
+        style={{ display: 'inline-block', border: '1px solid var(--rs-accent)', color: 'var(--rs-accent)', fontSize: '12px', letterSpacing: '0.12em', textTransform: 'uppercase', padding: '12px 24px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+        Subscribe on YouTube →
       </a>
     </div>
   )
