@@ -45,24 +45,26 @@ export default async function RagaDetailPage({ params }: { params: Promise<{ slu
   return (
     <>
       <SchemaMarkup schema={schema} />
-      <main style={{ maxWidth: '720px', margin: '0 auto', padding: '0 24px', background: '#0D1828' }}>
-        <div style={{ paddingTop: '32px' }}>
-          <Link href="/#ragas" style={{ fontSize: '11px', color: '#4A6080', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-            ← All Ragas
-          </Link>
+      <main style={{ padding: '80px 0' }}>
+        <div className="rs-container" style={{ maxWidth: '720px' }}>
+          <div style={{ marginBottom: '12px' }}>
+            <Link href="/#ragas" style={{ fontSize: '11px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              ← All Ragas
+            </Link>
+          </div>
+          <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
+            {raga.name}
+          </h1>
+          <p style={{ fontSize: '15px', color: 'var(--rs-muted)', marginBottom: '24px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            {raga.shortDescription}
+          </p>
+          <RagaMetaStrip raga={raga} />
+          <p style={{ fontSize: '15px', color: 'var(--rs-muted)', lineHeight: 1.85, marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            {raga.description}
+          </p>
+          <BestForList items={raga.bestFor} />
+          <YouTubeCTABlock raga={raga} />
         </div>
-        <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: '#EAD898', marginTop: '12px', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
-          {raga.name}
-        </h1>
-        <p style={{ fontSize: '15px', color: '#8A9EC4', marginBottom: '24px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-          {raga.shortDescription}
-        </p>
-        <RagaMetaStrip raga={raga} />
-        <p style={{ fontSize: '15px', color: '#8A9EC4', lineHeight: 1.85, marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-          {raga.description}
-        </p>
-        <BestForList items={raga.bestFor} />
-        <YouTubeCTABlock raga={raga} />
       </main>
       <RelatedRagasGrid ragas={related} />
       <SubscribeCTA />

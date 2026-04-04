@@ -35,6 +35,34 @@ section {
   padding: 80px 0;
 }
 
+.rs-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.rs-section {
+  padding: 80px 0;
+}
+
+.rs-section-label {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rs-accent);
+  margin-bottom: 12px;
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+.rs-section-title {
+  text-align: center;
+  margin-bottom: 48px;
+  color: var(--rs-text);
+  font-family: var(--font-cinzel), serif;
+}
+
 @media (max-width: 768px) {
   section { padding: 56px 0; }
+  .rs-section { padding: 56px 0; }
 }

@@ -10,7 +10,7 @@ import Link from 'next/link'
 export async function generateStaticParams() { return getAllMoods().map((mood) => ({ slug: moodToSlug(mood) })) }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params; const label = slugToLabel(slug)
-  return { title: `Ragas for ${label}`, description: `Indian classical ragas for ${label.toLowerCase()}. Curated from the Raga Soundscapes library.` }
+  return { title: `Ragas for ${label}`, description: `Indian classical ragas for ${label.toLowerCase()}.` }
 }
 
 export default async function MoodPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -22,17 +22,17 @@ export default async function MoodPage({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      <main style={{ background: '#0D1828', padding: '80px 24px' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+      <main className="rs-section">
+        <div className="rs-container">
           <div style={{ marginBottom: '32px' }}>
-            <Link href="/#ragas" style={{ fontSize: '11px', color: '#4A6080', fontFamily: 'var(--font-dm-sans), sans-serif' }}>← All Ragas</Link>
+            <Link href="/#ragas" style={{ fontSize: '11px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>← All Ragas</Link>
           </div>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#C8A830', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>Browse by mood</p>
-            <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: '#EAD898', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>Ragas for {label}</h1>
-            <p style={{ fontSize: '13px', color: '#4A6080', fontFamily: 'var(--font-dm-sans), sans-serif' }}>{ragas.length} raga{ragas.length !== 1 ? 's' : ''} in this collection.</p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1px', background: '#2A3D5C', border: '1px solid #2A3D5C' }}>
+          <p className="rs-section-label">Browse by mood</p>
+          <h1 className="rs-section-title" style={{ fontSize: 'clamp(36px, 5vw, 48px)', marginBottom: '8px' }}>Ragas for {label}</h1>
+          <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--rs-hint)', marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            {ragas.length} raga{ragas.length !== 1 ? 's' : ''} in this collection.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1px', background: 'var(--rs-border)', border: '1px solid var(--rs-border)' }}>
             {ragas.map((raga) => (<RagaCard key={raga.slug} raga={raga} />))}
           </div>
         </div>

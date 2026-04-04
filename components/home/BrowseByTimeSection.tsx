@@ -15,18 +15,21 @@ const TIMES = [
 
 export default function BrowseByTimeSection() {
   return (
-    <section style={{ background: '#0D1828', padding: '80px 24px', borderTop: '1px solid #2A3D5C' }}>
-      <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#C8A830', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-          Browse by time of day
-        </p>
-        <h2 style={{ fontSize: '28px', color: '#EAD898', marginBottom: '32px', fontFamily: 'var(--font-cinzel), serif' }}>
-          When are you listening?
-        </h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
+    <section className="rs-section" style={{ borderTop: '1px solid var(--rs-border)' }}>
+      <div className="rs-container">
+        <p className="rs-section-label">Browse by time of day</p>
+        <h2 className="rs-section-title" style={{ fontSize: '28px' }}>When are you listening?</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
           {TIMES.map((time) => (
             <Link key={time.href} href={time.href}
-              style={{ display: 'inline-block', border: '1px solid #2A3D5C', color: '#8A9EC4', fontSize: '14px', padding: '10px 20px', fontFamily: 'var(--font-dm-sans), sans-serif' }}
+              style={{
+                border: '1px solid var(--rs-border)',
+                color: 'var(--rs-muted)',
+                padding: '10px 20px',
+                fontSize: '13px',
+                letterSpacing: '0.06em',
+                fontFamily: 'var(--font-dm-sans), sans-serif',
+              }}
             >
               {time.label}
             </Link>
