@@ -2,46 +2,44 @@ import Link from 'next/link'
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-rs-bg border-t border-rs-border2 py-8 px-10">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-          <div className="text-center sm:text-left">
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-3">
+    <footer style={{ background: '#0a0a0a', borderTop: '1px solid #2a2a2a', padding: '40px 24px' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '32px', marginBottom: '32px' }}>
+          <div style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#a89880', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Listen by mood
             </p>
-            <div className="flex flex-col gap-2 text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint">
-              <Link href="/listen/sleep" className="hover:text-rs-muted transition-colors">Sleep Ragas</Link>
-              <Link href="/listen/morning" className="hover:text-rs-muted transition-colors">Morning Ragas</Link>
-              <Link href="/listen/focus" className="hover:text-rs-muted transition-colors">Focus Ragas</Link>
-              <Link href="/mood/meditation" className="hover:text-rs-muted transition-colors">Meditation</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <Link href="/listen/sleep">Sleep Ragas</Link>
+              <Link href="/listen/morning">Morning Ragas</Link>
+              <Link href="/listen/focus">Focus Ragas</Link>
+              <Link href="/mood/meditation">Meditation</Link>
             </div>
           </div>
-          <div className="text-center sm:text-left">
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-3">
+          <div style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#a89880', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Listen by time
             </p>
-            <div className="flex flex-col gap-2 text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint">
-              <Link href="/time/early-morning" className="hover:text-rs-muted transition-colors">Early Morning</Link>
-              <Link href="/time/evening" className="hover:text-rs-muted transition-colors">Evening</Link>
-              <Link href="/time/night" className="hover:text-rs-muted transition-colors">Night</Link>
-              <Link href="/time/late-night" className="hover:text-rs-muted transition-colors">Late Night</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <Link href="/time/early-morning">Early Morning</Link>
+              <Link href="/time/evening">Evening</Link>
+              <Link href="/time/night">Night</Link>
+              <Link href="/time/late-night">Late Night</Link>
             </div>
           </div>
-          <div className="text-center sm:text-left">
-            <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-3">
+          <div style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#a89880', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               Raga Soundscapes
             </p>
-            <div className="flex flex-col gap-2 text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint">
-              <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer" className="hover:text-rs-muted transition-colors">
-                YouTube Channel
-              </a>
-              <Link href="/#ragas" className="hover:text-rs-muted transition-colors">Full Library</Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+              <Link href="/#ragas">Full Library</Link>
             </div>
           </div>
         </div>
-        <div className="border-t border-rs-border2 pt-5 text-center">
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-border">
-            &copy; Raga Soundscapes &middot; ragasoundscapes.com
+        <div style={{ borderTop: '1px solid #2a2a2a', paddingTop: '20px', textAlign: 'center' }}>
+          <p style={{ fontSize: '11px', color: '#a89880', opacity: 0.5, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            © Raga Soundscapes · ragasoundscapes.com
           </p>
         </div>
       </div>

@@ -11,27 +11,35 @@ const CARDS = [
 
 export default function FindYourRagaGrid() {
   return (
-    <section className="section-light border-b border-[#E4D8C0] py-12 px-6">
-      <div className="max-w-[960px] mx-auto text-center">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
+    <section style={{ background: '#0a0a0a', padding: '80px 24px' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
+        <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#c8913a', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           What are you listening for?
         </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-[#12213A] mb-7">
+        <h2 style={{ fontSize: '42px', color: '#e8d5b7', marginBottom: '48px' }}>
           Find the right raga
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[12px] text-left">
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+          gap: '1px',
+          background: '#2a2a2a',
+          border: '1px solid #2a2a2a',
+        }}>
           {CARDS.map((card) => (
-            <Link key={card.href} href={card.href} className="block group">
-              <div className="flex flex-col justify-between bg-white border-[0.5px] border-[#E4D8C0] border-t-2 border-t-[#C8A830] rounded-[2px] px-[22px] py-[20px] shadow-[0_1px_6px_rgba(18,33,58,0.08)] transition-shadow duration-200 ease-in-out hover:shadow-[0_2px_12px_rgba(18,33,58,0.12)]">
-                <div>
-                  <h3 className="font-[family-name:var(--font-cinzel)] text-[18px] text-[#12213A] mb-[10px]">
-                    {card.label}
-                  </h3>
-                  <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-[#5A4830] leading-[1.65] mb-4">
-                    {card.description}
-                  </p>
-                </div>
-                <span className="text-[10px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] text-[#C8A830] group-hover:text-[#12213A] transition-colors duration-200">
+            <Link key={card.href} href={card.href} style={{ display: 'block' }}>
+              <div
+                style={{ background: '#0a0a0a', padding: '32px 28px', textAlign: 'left', transition: 'background 0.2s' }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = '#111111' }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = '#0a0a0a' }}
+              >
+                <h3 style={{ fontSize: '18px', color: '#e8d5b7', marginBottom: '8px' }}>
+                  {card.label}
+                </h3>
+                <p style={{ fontSize: '14px', color: '#a89880', lineHeight: 1.6, marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+                  {card.description}
+                </p>
+                <span style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#c8913a', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
                   Explore →
                 </span>
               </div>

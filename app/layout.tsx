@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Cinzel, DM_Sans } from 'next/font/google'
+import { Crimson_Text, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const cinzel = Cinzel({
+const crimson = Crimson_Text({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-cinzel',
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
   display: 'swap',
 })
 
@@ -34,10 +35,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${dmSans.variable}`}>
-      <body className="min-h-screen antialiased bg-rs-bg text-rs-text font-[family-name:var(--font-dm-sans)]">
-        {children}
-      </body>
+    <html lang="en" className={`${crimson.variable} ${dmSans.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }

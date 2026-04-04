@@ -3,36 +3,57 @@ import type { Raga } from '@/lib/types'
 
 export default function RagaCard({ raga }: { raga: Raga }) {
   return (
-    <Link href={`/raga/${raga.slug}`} className="block">
-      <div className="flex flex-col justify-between bg-white border-[0.5px] border-[#E4D8C0] border-t-2 border-t-[#C8A830] rounded-[2px] px-[22px] py-[20px] shadow-[0_1px_6px_rgba(18,33,58,0.08)] transition-shadow duration-200 ease-in-out hover:shadow-[0_2px_12px_rgba(18,33,58,0.12)] group">
-        <div>
-          <div className="flex items-start justify-between gap-2 mb-2">
-            <h3 className="font-[family-name:var(--font-cinzel)] text-[18px] text-[#12213A]">
-              {raga.name}
-            </h3>
-            {!raga.isLive && (
-              <span className="text-[9px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.1em] text-[#9A8860] border border-[#E4D8C0] px-2 py-0.5 rounded-full shrink-0">
-                Soon
-              </span>
-            )}
-          </div>
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
-            {raga.timeOfDay}
-          </p>
-        </div>
-        <div className="mt-2">
-          <p className="text-[12px] font-[family-name:var(--font-dm-sans)] text-[#7A6848] leading-relaxed">
-            {raga.rasa}
-          </p>
-          <div className="flex items-center gap-2 mt-2">
-            <span className="text-[10px] font-[family-name:var(--font-dm-sans)] text-[#C8A830] border border-[#E4D8C0] px-2 py-0.5 rounded-full">
-              {raga.mood}
+    <Link href={`/raga/${raga.slug}`} style={{ display: 'block' }}>
+      <div style={{
+        background: '#0a0a0a',
+        padding: '28px 24px',
+        borderLeft: '2px solid rgba(200, 145, 58, 0.18)',
+        transition: 'border-left-color 0.2s, background 0.2s',
+      }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.borderLeftColor = '#c8913a'
+          e.currentTarget.style.background = '#111111'
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.borderLeftColor = 'rgba(200, 145, 58, 0.18)'
+          e.currentTarget.style.background = '#0a0a0a'
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '6px' }}>
+          <h3 style={{ fontSize: '17px', color: '#e8d5b7', fontFamily: 'var(--font-serif), Georgia, serif' }}>
+            {raga.name}
+          </h3>
+          {!raga.isLive && (
+            <span style={{
+              fontSize: '9px',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              color: '#a89880',
+              border: '1px solid #2a2a2a',
+              padding: '2px 8px',
+              flexShrink: 0,
+              fontFamily: 'var(--font-dm-sans), sans-serif',
+            }}>
+              Soon
             </span>
-            <span className="text-[11px] font-[family-name:var(--font-dm-sans)] text-[#9A8860]">
-              {raga.instruments.slice(0, 2).join(' · ')}
-            </span>
-          </div>
+          )}
         </div>
+        <p style={{
+          fontSize: '11px',
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          color: '#c8913a',
+          marginBottom: '4px',
+          fontFamily: 'var(--font-dm-sans), sans-serif',
+        }}>
+          {raga.timeOfDay} · {raga.mood}
+        </p>
+        <p style={{ fontSize: '13px', color: '#a89880', lineHeight: 1.5, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+          {raga.rasa}
+        </p>
+        <p style={{ fontSize: '11px', color: '#a89880', opacity: 0.6, marginTop: '6px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+          {raga.instruments.slice(0, 2).join(' · ')}
+        </p>
       </div>
     </Link>
   )

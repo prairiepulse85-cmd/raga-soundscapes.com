@@ -39,28 +39,33 @@ export default async function MoodPage({
 
   return (
     <>
-      <main className="section-light py-16 px-10">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-8">
-            <Link
-              href="/#ragas"
-              className="text-[11px] font-[family-name:var(--font-dm-sans)] text-[#9A8860] hover:text-[#5A4830] transition-colors"
-            >
-              &larr; All Ragas
+      <main style={{ background: '#0a0a0a', padding: '80px 24px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ marginBottom: '32px' }}>
+            <Link href="/#ragas" style={{ fontSize: '11px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              ← All Ragas
             </Link>
           </div>
 
-          <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
-            Browse by mood
-          </p>
-          <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-[#12213A] mb-2">
-            Ragas for {label}
-          </h1>
-          <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-[#7A6848] mb-10">
-            {ragas.length} raga{ragas.length !== 1 ? 's' : ''} in this collection, arranged by time of day.
-          </p>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#c8913a', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              Browse by mood
+            </p>
+            <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: '#e8d5b7', marginBottom: '8px' }}>
+              Ragas for {label}
+            </h1>
+            <p style={{ fontSize: '15px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              {ragas.length} raga{ragas.length !== 1 ? 's' : ''} in this collection, arranged by time of day.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[12px]">
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: '1px',
+            background: '#2a2a2a',
+            border: '1px solid #2a2a2a',
+          }}>
             {ragas.map((raga) => (
               <RagaCard key={raga.slug} raga={raga} />
             ))}

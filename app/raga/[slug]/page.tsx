@@ -72,27 +72,27 @@ export default async function RagaDetailPage({
     <>
       <SchemaMarkup schema={schema} />
 
-      <main className="max-w-[720px] mx-auto px-6 bg-rs-bg">
-        <div className="pt-8">
+      <main style={{ maxWidth: '720px', margin: '0 auto', padding: '0 24px', background: '#0a0a0a' }}>
+        <div style={{ paddingTop: '32px' }}>
           <Link
             href="/#ragas"
-            className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
+            style={{ fontSize: '11px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}
           >
-            &larr; All Ragas
+            ← All Ragas
           </Link>
         </div>
 
-        <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-rs-text mt-3 mb-2">
+        <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: '#e8d5b7', marginTop: '12px', marginBottom: '8px' }}>
           {raga.name}
         </h1>
 
-        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted mb-6">
+        <p style={{ fontSize: '16px', color: '#a89880', marginBottom: '24px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           {raga.shortDescription}
         </p>
 
         <RagaMetaStrip raga={raga} />
 
-        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10">
+        <p style={{ fontSize: '16px', color: '#a89880', lineHeight: 1.85, marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           {raga.description}
         </p>
 

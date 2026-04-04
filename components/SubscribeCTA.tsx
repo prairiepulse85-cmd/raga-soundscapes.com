@@ -1,28 +1,35 @@
-import { siteMeta } from '@/data/site-meta'
-
 export default function SubscribeCTA() {
   return (
-    <section className="bg-rs-surface2 border-t-2 border-t-[#C8A830] py-16 px-10">
-      <div className="max-w-[480px] mx-auto text-center">
-        <div className="w-10 h-px bg-rs-border mx-auto mb-6" />
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[30px] text-rs-text mb-4">
+    <section style={{ background: '#111111', borderTop: '2px solid #c8913a', padding: '80px 24px' }}>
+      <div style={{ maxWidth: '480px', margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ width: '40px', height: '1px', background: '#2a2a2a', margin: '0 auto 24px' }} />
+        <h2 style={{ fontSize: '30px', color: '#e8d5b7', marginBottom: '16px', fontStyle: 'italic' }}>
           Find your stillness.
         </h2>
-        <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.7] mb-7">
+        <p style={{ fontSize: '14px', color: '#a89880', lineHeight: 1.7, marginBottom: '28px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           An ever-growing library of Indian classical raga soundscapes. Each one
           designed around the time, mood, and rasa of its raga.
         </p>
-        <div className="flex items-center justify-center gap-5 flex-wrap">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <a
-            href={siteMeta.channelUrl}
+            href="https://youtube.com/@ragasoundscapes"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-rs-accent text-rs-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-rs-accent hover:text-rs-bg transition-colors duration-200"
+            style={{
+              display: 'inline-block',
+              border: '1px solid #c8913a',
+              color: '#c8913a',
+              fontSize: '12px',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              padding: '12px 24px',
+              fontFamily: 'var(--font-dm-sans), sans-serif',
+            }}
           >
             Subscribe on YouTube →
           </a>
-          <span className="text-[12px] font-[family-name:var(--font-dm-sans)] text-rs-hint">
-            {siteMeta.channelHandle}
+          <span style={{ fontSize: '12px', color: '#a89880', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            @ragasoundscapes
           </span>
         </div>
       </div>

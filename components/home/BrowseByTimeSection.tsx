@@ -15,20 +15,30 @@ const TIMES = [
 
 export default function BrowseByTimeSection() {
   return (
-    <section className="section-light border-b border-[#E4D8C0] py-12 px-6">
-      <div className="max-w-[960px] mx-auto text-center">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
+    <section style={{ background: '#0a0a0a', padding: '80px 24px', borderTop: '1px solid #2a2a2a' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
+        <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#c8913a', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           Browse by time of day
         </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-[#12213A] mb-6">
+        <h2 style={{ fontSize: '42px', color: '#e8d5b7', marginBottom: '48px' }}>
           When are you listening?
         </h2>
-        <div className="flex flex-wrap justify-center gap-[10px]">
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
           {TIMES.map((time) => (
             <Link
               key={time.href}
               href={time.href}
-              className="inline-block border border-[#E4D8C0] text-[#5A4830] text-[13px] font-[family-name:var(--font-dm-sans)] px-4 py-2 rounded-full hover:border-[#C8A830] hover:text-[#C8A830] transition-colors duration-200"
+              style={{
+                display: 'inline-block',
+                border: '1px solid #2a2a2a',
+                color: '#a89880',
+                fontSize: '14px',
+                padding: '10px 20px',
+                transition: 'border-color 0.2s, color 0.2s',
+                fontFamily: 'var(--font-dm-sans), sans-serif',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#c8913a'; e.currentTarget.style.color = '#c8913a' }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#2a2a2a'; e.currentTarget.style.color = '#a89880' }}
             >
               {time.label}
             </Link>

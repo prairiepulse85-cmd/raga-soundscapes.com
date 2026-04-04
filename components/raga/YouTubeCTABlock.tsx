@@ -2,8 +2,14 @@ import type { Raga } from '@/lib/types'
 
 export default function YouTubeCTABlock({ raga }: { raga: Raga }) {
   return (
-    <div className="bg-rs-surface border border-rs-border border-t-2 border-t-rs-accent rounded-[2px] p-6 mb-12">
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-rs-hint mb-2">
+    <div style={{
+      background: '#111111',
+      border: '1px solid #2a2a2a',
+      borderTop: '2px solid #c8913a',
+      padding: '28px',
+      marginBottom: '48px',
+    }}>
+      <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: '#a89880', marginBottom: '10px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
         Listen now
       </p>
       {raga.isLive ? (
@@ -11,31 +17,40 @@ export default function YouTubeCTABlock({ raga }: { raga: Raga }) {
           href={raga.youtubeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="block font-[family-name:var(--font-cinzel)] text-[16px] text-rs-accent hover:underline mb-1"
+          style={{ display: 'block', fontSize: '17px', color: '#c8913a', marginBottom: '4px' }}
         >
-          {raga.name} — Meditation Soundscape &rarr;
+          {raga.name} — Meditation Soundscape →
         </a>
       ) : (
         <span
-          className="block font-[family-name:var(--font-cinzel)] text-[16px] text-rs-hint mb-1"
+          style={{ display: 'block', fontSize: '17px', color: '#a89880', opacity: 0.5, marginBottom: '4px' }}
           aria-disabled="true"
         >
           Coming soon on YouTube
         </span>
       )}
 
-      <div className="border-t border-rs-border my-4" />
+      <div style={{ borderTop: '1px solid #2a2a2a', margin: '16px 0' }} />
 
-      <p className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint mb-3">
+      <p style={{ fontSize: '11px', color: '#a89880', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
         Like this soundscape?
       </p>
       <a
         href="https://youtube.com/@ragasoundscapes"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block border border-rs-accent text-rs-accent text-[12px] font-[family-name:var(--font-dm-sans)] font-medium uppercase tracking-[0.12em] px-6 py-3 rounded-[2px] hover:bg-rs-accent hover:text-rs-bg transition-colors duration-200"
+        style={{
+          display: 'inline-block',
+          border: '1px solid #c8913a',
+          color: '#c8913a',
+          fontSize: '12px',
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          padding: '12px 24px',
+          fontFamily: 'var(--font-dm-sans), sans-serif',
+        }}
       >
-        Subscribe on YouTube &rarr;
+        Subscribe on YouTube →
       </a>
     </div>
   )
