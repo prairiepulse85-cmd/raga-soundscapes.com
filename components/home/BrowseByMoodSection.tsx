@@ -11,30 +11,18 @@ const MOODS = [
 
 export default function BrowseByMoodSection() {
   return (
-    <section style={{ background: '#0a0a0a', padding: '80px 24px', borderTop: '1px solid #2a2a2a' }}>
+    <section style={{ background: '#0D1828', padding: '80px 24px', borderTop: '1px solid #2A3D5C' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#c8913a', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+        <p style={{ fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#C8A830', marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           Browse by mood
         </p>
-        <h2 style={{ fontSize: '42px', color: '#e8d5b7', marginBottom: '48px' }}>
+        <h2 style={{ fontSize: '28px', color: '#EAD898', marginBottom: '32px', fontFamily: 'var(--font-cinzel), serif' }}>
           What do you need?
         </h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
           {MOODS.map((mood) => (
-            <Link
-              key={mood.href}
-              href={mood.href}
-              style={{
-                display: 'inline-block',
-                border: '1px solid #2a2a2a',
-                color: '#a89880',
-                fontSize: '14px',
-                padding: '10px 20px',
-                transition: 'border-color 0.2s, color 0.2s',
-                fontFamily: 'var(--font-dm-sans), sans-serif',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#c8913a'; e.currentTarget.style.color = '#c8913a' }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#2a2a2a'; e.currentTarget.style.color = '#a89880' }}
+            <Link key={mood.href} href={mood.href}
+              style={{ display: 'inline-block', border: '1px solid #2A3D5C', color: '#8A9EC4', fontSize: '14px', padding: '10px 20px', fontFamily: 'var(--font-dm-sans), sans-serif' }}
             >
               {mood.label}
             </Link>

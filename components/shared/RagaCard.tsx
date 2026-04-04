@@ -5,22 +5,22 @@ export default function RagaCard({ raga }: { raga: Raga }) {
   return (
     <Link href={`/raga/${raga.slug}`} style={{ display: 'block' }}>
       <div style={{
-        background: '#0a0a0a',
-        padding: '28px 24px',
-        borderLeft: '2px solid rgba(200, 145, 58, 0.18)',
+        background: '#0D1828',
+        padding: '20px',
+        borderLeft: '2px solid rgba(200, 168, 48, 0.18)',
         transition: 'border-left-color 0.2s, background 0.2s',
       }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.borderLeftColor = '#c8913a'
-          e.currentTarget.style.background = '#111111'
+          e.currentTarget.style.borderLeftColor = '#C8A830'
+          e.currentTarget.style.background = '#0A1220'
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.borderLeftColor = 'rgba(200, 145, 58, 0.18)'
-          e.currentTarget.style.background = '#0a0a0a'
+          e.currentTarget.style.borderLeftColor = 'rgba(200, 168, 48, 0.18)'
+          e.currentTarget.style.background = '#0D1828'
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '6px' }}>
-          <h3 style={{ fontSize: '17px', color: '#e8d5b7', fontFamily: 'var(--font-serif), Georgia, serif' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '8px', marginBottom: '8px' }}>
+          <h3 style={{ fontSize: '17px', color: '#EAD898', fontFamily: 'var(--font-cinzel), serif' }}>
             {raga.name}
           </h3>
           {!raga.isLive && (
@@ -28,8 +28,8 @@ export default function RagaCard({ raga }: { raga: Raga }) {
               fontSize: '9px',
               letterSpacing: '0.1em',
               textTransform: 'uppercase',
-              color: '#a89880',
-              border: '1px solid #2a2a2a',
+              color: '#4A6080',
+              border: '1px solid #2A3D5C',
               padding: '2px 8px',
               flexShrink: 0,
               fontFamily: 'var(--font-dm-sans), sans-serif',
@@ -42,16 +42,16 @@ export default function RagaCard({ raga }: { raga: Raga }) {
           fontSize: '11px',
           letterSpacing: '0.12em',
           textTransform: 'uppercase',
-          color: '#c8913a',
+          color: '#4A6080',
           marginBottom: '4px',
           fontFamily: 'var(--font-dm-sans), sans-serif',
         }}>
           {raga.timeOfDay} · {raga.mood}
         </p>
-        <p style={{ fontSize: '13px', color: '#a89880', lineHeight: 1.5, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+        <p style={{ fontSize: '12px', color: '#8A9EC4', lineHeight: 1.5, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           {raga.rasa}
         </p>
-        <p style={{ fontSize: '11px', color: '#a89880', opacity: 0.6, marginTop: '6px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+        <p style={{ fontSize: '11px', color: '#4A6080', marginTop: '6px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
           {raga.instruments.slice(0, 2).join(' · ')}
         </p>
       </div>

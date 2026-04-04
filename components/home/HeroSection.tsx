@@ -3,14 +3,14 @@ export default function HeroSection() {
     <section style={{
       padding: '120px 24px 100px',
       textAlign: 'center',
-      background: '#0a0a0a',
+      background: '#0D1828',
     }}>
       <div style={{ maxWidth: '720px', margin: '0 auto' }}>
         <p style={{
           fontSize: '11px',
           letterSpacing: '0.15em',
           textTransform: 'uppercase',
-          color: '#c8913a',
+          color: '#4A6080',
           marginBottom: '24px',
           fontFamily: 'var(--font-dm-sans), sans-serif',
         }}>
@@ -18,30 +18,32 @@ export default function HeroSection() {
         </p>
 
         <h1 style={{
-          fontSize: 'clamp(44px, 7vw, 72px)',
-          fontFamily: 'var(--font-serif), Georgia, serif',
+          fontSize: 'clamp(32px, 6vw, 42px)',
+          fontFamily: 'var(--font-cinzel), serif',
           fontWeight: 400,
-          color: '#e8d5b7',
-          marginBottom: '20px',
+          color: '#EAD898',
+          letterSpacing: '0.12em',
+          marginBottom: '16px',
           lineHeight: 1.1,
         }}>
           Raga Soundscapes
         </h1>
 
         <p style={{
-          fontSize: '20px',
-          color: '#a89880',
+          fontSize: '15px',
+          color: '#8A9EC4',
           marginBottom: '10px',
           lineHeight: 1.5,
+          fontFamily: 'var(--font-dm-sans), sans-serif',
         }}>
           Indian classical soundscapes for calm, focus, and stillness.
         </p>
 
         <p style={{
-          fontSize: '15px',
-          color: '#a89880',
-          opacity: 0.7,
-          marginBottom: '48px',
+          fontSize: '13px',
+          color: '#4A6080',
+          marginBottom: '32px',
+          fontFamily: 'var(--font-dm-sans), sans-serif',
         }}>
           Organised by time, mood, and rasa.
         </p>
@@ -52,11 +54,11 @@ export default function HeroSection() {
           rel="noopener noreferrer"
           style={{
             display: 'inline-block',
-            border: '1px solid #c8913a',
-            color: '#c8913a',
-            padding: '13px 32px',
-            fontSize: '14px',
-            letterSpacing: '0.06em',
+            border: '1px solid #C8A830',
+            color: '#C8A830',
+            padding: '12px 24px',
+            fontSize: '12px',
+            letterSpacing: '0.12em',
             textTransform: 'uppercase',
             fontFamily: 'var(--font-dm-sans), sans-serif',
           }}
