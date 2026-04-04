@@ -4,7 +4,7 @@ import type { Raga } from '@/lib/types'
 export default function RagaCard({ raga }: { raga: Raga }) {
   return (
     <Link href={`/raga/${raga.slug}`} className="block">
-      <div className="min-h-[140px] flex flex-col justify-between bg-white border-[0.5px] border-[#E4D8C0] border-t-2 border-t-[#C8A830] rounded-[2px] px-[22px] py-[20px] shadow-[0_1px_6px_rgba(18,33,58,0.08)] transition-shadow duration-200 ease-in-out hover:shadow-[0_2px_12px_rgba(18,33,58,0.12)] group">
+      <div className="flex flex-col justify-between bg-white border-[0.5px] border-[#E4D8C0] border-t-2 border-t-[#C8A830] rounded-[2px] px-[22px] py-[20px] shadow-[0_1px_6px_rgba(18,33,58,0.08)] transition-shadow duration-200 ease-in-out hover:shadow-[0_2px_12px_rgba(18,33,58,0.12)] group">
         <div>
           <div className="flex items-start justify-between gap-2 mb-2">
             <h3 className="font-[family-name:var(--font-cinzel)] text-[18px] text-[#12213A]">
@@ -20,7 +20,7 @@ export default function RagaCard({ raga }: { raga: Raga }) {
             {raga.timeOfDay}
           </p>
         </div>
-        <div>
+        <div className="mt-2">
           <p className="text-[12px] font-[family-name:var(--font-dm-sans)] text-[#7A6848] leading-relaxed">
             {raga.rasa}
           </p>

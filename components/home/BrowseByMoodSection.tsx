@@ -11,15 +11,15 @@ const MOODS = [
 
 export default function BrowseByMoodSection() {
   return (
-    <section className="section-light border-b border-[#E4D8C0] py-12 px-10">
-      <div className="max-w-[960px] mx-auto">
+    <section className="section-light border-b border-[#E4D8C0] py-12 px-6">
+      <div className="max-w-[960px] mx-auto text-center">
         <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
           Browse by mood
         </p>
         <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-[#12213A] mb-6">
           What do you need?
         </h2>
-        <div className="flex flex-wrap gap-[10px]">
+        <div className="flex flex-wrap justify-center gap-[10px]">
           {MOODS.map((mood) => (
             <Link
               key={mood.href}

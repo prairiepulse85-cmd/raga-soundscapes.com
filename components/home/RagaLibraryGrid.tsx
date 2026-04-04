@@ -24,8 +24,8 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
   const selectClass = "bg-white border border-[#E4D8C0] text-[#5A4830] text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-[#C8A830]"
 
   return (
-    <section id="ragas" className="section-light py-16 px-10">
-      <div className="max-w-5xl mx-auto">
+    <section id="ragas" className="section-light py-16 px-6">
+      <div className="max-w-5xl mx-auto text-center">
         <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
           The raga library
         </p>
@@ -36,7 +36,7 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
           Arranged by time of day, from pre-dawn to deep night.
         </p>
 
-        <div className="flex flex-wrap items-center gap-3 mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <select value={timeFilter} onChange={(e) => setTimeFilter(e.target.value)} className={selectClass}>
             <option value="">All times</option>
             {times.map(t => <option key={t} value={t}>{t}</option>)}
@@ -65,14 +65,14 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
           )}
         </div>
 
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[12px]">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[12px] text-left">
           {filtered.map((raga) => (
             <RagaCard key={raga.slug} raga={raga} />
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-center text-[14px] font-[family-name:var(--font-dm-sans)] text-[#9A8860] py-12">
+          <p className="text-[14px] font-[family-name:var(--font-dm-sans)] text-[#9A8860] py-12">
             No ragas match your filters.
           </p>
         )}
