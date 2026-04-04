@@ -1,4 +1,5 @@
-import { Raga, ragas } from './ragas'
+import type { Raga } from './types'
+import { ragas } from './ragas'
 
 export function getRelatedRagas(raga: Raga): Raga[] {
   if (raga.relatedRagas?.length === 3) {

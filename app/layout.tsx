@@ -1,61 +1,42 @@
 import type { Metadata } from 'next'
-import { Cinzel, DM_Sans } from 'next/font/google'
+import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const cinzel = Cinzel({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['300', '400', '500', '600'],
+  style: ['normal', 'italic'],
   variable: '--font-cinzel',
   display: 'swap',
 })
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['300', '400', '500'],
   variable: '--font-dm-sans',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Raga Soundscapes — Indian Classical Meditation Music',
-  description:
-    'Original raga soundscapes for stillness, sleep and focus. A growing library of 14 Indian classical ragas — each designed for a specific time of day, mood, and purpose. On YouTube.',
-  keywords: [
-    'raga meditation music',
-    'indian classical meditation',
-    'raga for sleep',
-    'hindustani meditation',
-    'raga soundscape',
-  ],
+  metadataBase: new URL('https://ragasoundscapes.com'),
+  title: {
+    default: 'Raga Soundscapes — Indian Classical Meditation Music',
+    template: '%s | Raga Soundscapes',
+  },
+  description: 'Discover Indian classical ragas for meditation, sleep, focus, and stillness. Organised by time of day, mood, and rasa.',
   openGraph: {
-    title: 'Raga Soundscapes — Indian Classical Meditation Music',
-    description:
-      'A growing library of 14 Indian classical ragas. Each soundscape designed for a specific time, mood, and purpose.',
-    url: 'https://ragasoundscapes.com',
     siteName: 'Raga Soundscapes',
     type: 'website',
-    images: [{ url: '/api/og?page=home', width: 1200, height: 630 }],
+    locale: 'en_US',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Raga Soundscapes',
-    description:
-      'Indian classical meditation music. 14 ragas for sleep, focus, and stillness.',
-    images: ['/api/og?page=home'],
-  },
-  alternates: { canonical: 'https://ragasoundscapes.com' },
+  twitter: { card: 'summary_large_image' },
+  robots: { index: true, follow: true },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${dmSans.variable}`}>
-      <body className="min-h-screen antialiased bg-rs-bg text-rs-text font-[family-name:var(--font-dm-sans)]">
-        {children}
-      </body>
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }
