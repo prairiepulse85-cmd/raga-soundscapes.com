@@ -21,34 +21,28 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
     })
   }, [ragas, timeFilter, moodFilter, search])
 
+  const selectClass = "bg-white border border-[#E4D8C0] text-[#5A4830] text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-[#C8A830]"
+
   return (
-    <section id="ragas" className="bg-bg py-14 px-6 border-t border-border">
+    <section id="ragas" className="section-light py-16 px-10">
       <div className="max-w-5xl mx-auto">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-1">
+        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
           The raga library
         </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[28px] text-text mb-2">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-[28px] text-[#12213A] mb-2">
           Explore the Ragas
         </h2>
-        <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-muted/70 mb-6">
+        <p className="text-[13px] font-[family-name:var(--font-dm-sans)] text-[#7A6848] mb-6">
           Arranged by time of day, from pre-dawn to deep night.
         </p>
 
         <div className="flex flex-wrap items-center gap-3 mb-8">
-          <select
-            value={timeFilter}
-            onChange={(e) => setTimeFilter(e.target.value)}
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent"
-          >
+          <select value={timeFilter} onChange={(e) => setTimeFilter(e.target.value)} className={selectClass}>
             <option value="">All times</option>
             {times.map(t => <option key={t} value={t}>{t}</option>)}
           </select>
 
-          <select
-            value={moodFilter}
-            onChange={(e) => setMoodFilter(e.target.value)}
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent"
-          >
+          <select value={moodFilter} onChange={(e) => setMoodFilter(e.target.value)} className={selectClass}>
             <option value="">All moods</option>
             {moods.map(m => <option key={m} value={m}>{m}</option>)}
           </select>
@@ -58,27 +52,27 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by name..."
-            className="bg-surface border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-accent placeholder:text-muted/40 w-full sm:w-48"
+            className="bg-white border border-[#E4D8C0] text-[#5A4830] text-[13px] font-[family-name:var(--font-dm-sans)] px-3 py-2 rounded-[2px] focus:outline-none focus:border-[#C8A830] placeholder:text-[#9A8860] w-full sm:w-48"
           />
 
           {(timeFilter || moodFilter || search) && (
             <button
               onClick={() => { setTimeFilter(''); setMoodFilter(''); setSearch('') }}
-              className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.1em] text-accent hover:text-text transition-colors"
+              className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.1em] text-[#C8A830] hover:text-[#12213A] transition-colors"
             >
               Reset
             </button>
           )}
         </div>
 
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 gap-[12px]">
           {filtered.map((raga) => (
             <RagaCard key={raga.slug} raga={raga} />
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-center text-[14px] font-[family-name:var(--font-dm-sans)] text-muted/60 py-12">
+          <p className="text-center text-[14px] font-[family-name:var(--font-dm-sans)] text-[#9A8860] py-12">
             No ragas match your filters.
           </p>
         )}

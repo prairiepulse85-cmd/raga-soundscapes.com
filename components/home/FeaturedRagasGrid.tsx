@@ -3,15 +3,15 @@ import RagaCard from '@/components/shared/RagaCard'
 
 export default function FeaturedRagasGrid({ ragas }: { ragas: Raga[] }) {
   return (
-    <section className="bg-bg py-14 px-6 border-t border-border">
+    <section className="section-light border-b border-[#E4D8C0] py-12 px-10">
       <div className="max-w-5xl mx-auto">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-1">
+        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
           Recommended starting points
         </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-text mb-8">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-[#12213A] mb-7">
           Featured Ragas
         </h2>
-        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[12px]">
           {ragas.map((raga) => (
             <RagaCard key={raga.slug} raga={raga} />
           ))}

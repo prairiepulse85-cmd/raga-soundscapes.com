@@ -11,20 +11,20 @@ const MOODS = [
 
 export default function BrowseByMoodSection() {
   return (
-    <section className="bg-bg py-14 px-6 border-t border-border">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-muted mb-1">
+    <section className="section-light border-b border-[#E4D8C0] py-12 px-10">
+      <div className="max-w-[960px] mx-auto">
+        <p className="text-[11px] font-[family-name:var(--font-dm-sans)] uppercase tracking-[0.12em] text-[#9A8860] mb-1">
           Browse by mood
         </p>
-        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-text mb-6">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-[24px] text-[#12213A] mb-6">
           What do you need?
         </h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           {MOODS.map((mood) => (
             <Link
               key={mood.href}
               href={mood.href}
-              className="inline-block border border-border text-muted text-[13px] font-[family-name:var(--font-dm-sans)] px-4 py-2 rounded-full hover:border-accent hover:text-accent transition-colors duration-200"
+              className="inline-block border border-[#E4D8C0] text-[#5A4830] text-[13px] font-[family-name:var(--font-dm-sans)] px-4 py-2 rounded-full hover:border-[#C8A830] hover:text-[#C8A830] transition-colors duration-200"
             >
               {mood.label}
             </Link>

@@ -5,7 +5,8 @@ import RagaMetaStrip from '@/components/raga/RagaMetaStrip'
 import BestForList from '@/components/raga/BestForList'
 import YouTubeCTABlock from '@/components/raga/YouTubeCTABlock'
 import RelatedRagasGrid from '@/components/raga/RelatedRagasGrid'
-import SiteFooter from '@/components/layout/SiteFooter'
+import SubscribeCTA from '@/components/SubscribeCTA'
+import Footer from '@/components/Footer'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import Link from 'next/link'
 
@@ -58,44 +59,52 @@ export default async function RagaDetailPage({
         { '@type': 'ListItem', position: 3, name: raga.name, item: `https://ragasoundscapes.com/raga/${raga.slug}` },
       ],
     },
+    mainEntity: {
+      '@type': 'MusicComposition',
+      name: raga.name,
+      description: `${raga.rasa}. A ${raga.timeOfDay.toLowerCase()} raga from the Hindustani classical tradition.`,
+      musicCompositionForm: 'Raga',
+      typicalAgeRange: 'All ages',
+    },
   }
 
   return (
     <>
       <SchemaMarkup schema={schema} />
 
-      <main className="max-w-[720px] mx-auto px-6 bg-bg">
+      <main className="max-w-[720px] mx-auto px-6 bg-rs-bg">
         <div className="pt-8">
           <Link
             href="/#ragas"
-            className="text-[11px] font-[family-name:var(--font-dm-sans)] text-muted/60 hover:text-muted transition-colors"
+            className="text-[11px] font-[family-name:var(--font-dm-sans)] text-rs-hint hover:text-rs-muted transition-colors"
           >
             &larr; All Ragas
           </Link>
         </div>
 
-        <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-text mt-3 mb-2">
+        <h1 className="font-[family-name:var(--font-cinzel)] text-[36px] sm:text-[48px] text-rs-text mt-3 mb-2">
           {raga.name}
         </h1>
 
-        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-muted mb-6">
+        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted mb-6">
           {raga.shortDescription}
         </p>
 
         <RagaMetaStrip raga={raga} />
 
-        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-muted leading-[1.85] mb-8">
+        <p className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10">
           {raga.description}
         </p>
 
         <BestForList items={raga.bestFor} />
 
         <YouTubeCTABlock raga={raga} />
-
-        <RelatedRagasGrid ragas={related} />
       </main>
 
-      <SiteFooter />
+      <RelatedRagasGrid ragas={related} />
+
+      <SubscribeCTA />
+      <Footer />
     </>
   )
 }
