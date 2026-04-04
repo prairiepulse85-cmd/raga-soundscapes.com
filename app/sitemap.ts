@@ -1,39 +1,32 @@
 import { MetadataRoute } from 'next'
-import { ragas } from '@/lib/ragas'
+import { getAllRagas, getAllMoods, getAllTimeCategories } from '@/lib/ragas'
+import { moodToSlug, timeToSlug } from '@/lib/utils'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const ragaUrls = ragas.map((r) => ({
-    url: `https://ragasoundscapes.com/raga/${r.slug}`,
-    lastModified: new Date(r.lastModified),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
-
+  const base = 'https://ragasoundscapes.com'
+  const ragas = getAllRagas()
   return [
-    {
-      url: 'https://ragasoundscapes.com',
+    { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1.0 },
+    ...ragas.map(r => ({
+      url: `${base}/raga/${r.slug}`,
       lastModified: new Date(),
-      priority: 1.0,
       changeFrequency: 'monthly' as const,
-    },
-    {
-      url: 'https://ragasoundscapes.com/listen/sleep',
-      lastModified: new Date('2025-01-01'),
-      priority: 0.7,
-      changeFrequency: 'yearly' as const,
-    },
-    {
-      url: 'https://ragasoundscapes.com/listen/morning',
-      lastModified: new Date('2025-01-01'),
-      priority: 0.7,
-      changeFrequency: 'yearly' as const,
-    },
-    {
-      url: 'https://ragasoundscapes.com/listen/focus',
-      lastModified: new Date('2025-01-01'),
-      priority: 0.7,
-      changeFrequency: 'yearly' as const,
-    },
-    ...ragaUrls,
+      priority: r.featured ? 0.9 : 0.7,
+    })),
+    ...getAllMoods().map(m => ({
+      url: `${base}/mood/${moodToSlug(m)}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+    ...getAllTimeCategories().map(t => ({
+      url: `${base}/time/${timeToSlug(t)}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    })),
+    { url: `${base}/listen/sleep`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${base}/listen/morning`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${base}/listen/focus`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 }
