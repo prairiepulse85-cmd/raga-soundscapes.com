@@ -4,16 +4,10 @@ import { Raga } from '@/lib/ragas'
 export default function RagaCard({ raga }: { raga: Raga }) {
   return (
     <Link href={`/raga/${raga.slug}`} style={{ display: 'block' }}>
-      <div style={{
-        background: '#1A2E50',
+      <div className="rs-raga-card-legacy" style={{
         border: '1px solid #2A3D5C',
-        borderLeft: '2px solid rgba(200, 168, 48, 0.18)',
         padding: '20px',
-        transition: 'border-left-color 0.2s, background 0.2s',
-      }}
-        onMouseEnter={(e) => { e.currentTarget.style.borderLeftColor = '#C8A830'; e.currentTarget.style.background = '#0A1220' }}
-        onMouseLeave={(e) => { e.currentTarget.style.borderLeftColor = 'rgba(200, 168, 48, 0.18)'; e.currentTarget.style.background = '#1A2E50' }}
-      >
+      }}>
         <h3 style={{ fontSize: '17px', color: '#EAD898', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
           {raga.name}
         </h3>

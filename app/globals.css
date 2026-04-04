@@ -62,6 +62,37 @@ section {
   font-family: var(--font-cinzel), serif;
 }
 
+/* Raga card hover */
+.rs-raga-card {
+  background: var(--rs-bg);
+  border-left: 2px solid rgba(200, 168, 48, 0.18);
+  transition: border-left-color 0.2s, background 0.2s;
+}
+.rs-raga-card:hover {
+  border-left-color: #C8A830;
+  background: var(--rs-surface2);
+}
+
+/* Legacy raga card hover */
+.rs-raga-card-legacy {
+  background: #1A2E50;
+  border-left: 2px solid rgba(200, 168, 48, 0.18);
+  transition: border-left-color 0.2s, background 0.2s;
+}
+.rs-raga-card-legacy:hover {
+  border-left-color: #C8A830;
+  background: #0A1220;
+}
+
+/* Grid card hover */
+.rs-grid-card {
+  background: var(--rs-bg);
+  transition: background 0.2s;
+}
+.rs-grid-card:hover {
+  background: var(--rs-surface2);
+}
+
 @media (max-width: 768px) {
   section { padding: 56px 0; }
   .rs-section { padding: 56px 0; }

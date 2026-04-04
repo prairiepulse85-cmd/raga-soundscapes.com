@@ -25,9 +25,8 @@ export default function FindYourRagaGrid() {
           {CARDS.map((card) => (
             <Link key={card.href} href={card.href} style={{ display: 'block' }}>
               <div
-                style={{ background: 'var(--rs-bg)', padding: '24px 20px', textAlign: 'left', transition: 'background 0.2s' }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = 'var(--rs-surface2)' }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = 'var(--rs-bg)' }}
+                className="rs-grid-card"
+                style={{ padding: '24px 20px', textAlign: 'left' }}
               >
                 <h3 style={{ fontSize: '16px', color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
                   {card.label}
