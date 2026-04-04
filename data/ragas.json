@@ -27,7 +27,7 @@
     "bestFor": ["Morning meditation", "Prayer", "Grounding", "Stillness"],
     "shortDescription": "A dawn raga of gravity, devotion, and inner steadiness.",
     "description": "Raga Bhairav carries a solemn, devotional force. It is ideal for still morning listening and for creating a sense of sacred calm at the start of the day. Its gravity does not press — it steadies.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/VjE8weEE4PQ",
     "featured": true,
     "relatedRagas": ["lalit", "ahir-bhairav", "todi"]
   },
@@ -43,7 +43,7 @@
     "bestFor": ["Contemplation", "Morning listening", "Emotional depth", "Meditation"],
     "shortDescription": "A morning raga of intensity, yearning, and inward pull.",
     "description": "Raga Todi carries a searching and deeply introspective character. It suits quiet morning hours when the listener wants depth rather than comfort.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/qYz8UrlL9aM",
     "featured": true,
     "relatedRagas": ["bhairav", "lalit", "miyan-ki-todi"]
   },
@@ -187,7 +187,7 @@
     "bestFor": ["Focus", "Reading", "Creative work", "Afternoon stillness"],
     "shortDescription": "Warm, inward, and gently yearning — good for focused work.",
     "description": "Bhimpalasi balances introspection with ease. It is especially suited to afternoon attention, quiet study, and unhurried creative work — a raga that deepens concentration without demanding it.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/JxVCcEH2yP4",
     "featured": false,
     "relatedRagas": ["kafi", "multani", "bihag"]
   },
@@ -235,7 +235,7 @@
     "bestFor": ["Evening calm", "Elegant listening", "Reading", "Gentle focus"],
     "shortDescription": "Open, luminous, and expansive — an evening raga of grace.",
     "description": "Yaman is spacious and luminous, with an expansive emotional character. It is one of the most welcoming evening ragas and works beautifully for calm focus, unhurried reading, or a serene transition out of the day.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/SAqsOevhJwg",
     "featured": true,
     "relatedRagas": ["bihag", "kedar", "puriya"]
   },
@@ -331,7 +331,7 @@
     "bestFor": ["Night meditation", "Calm listening", "Prayerful mood", "Evening release"],
     "shortDescription": "A night raga of peace, devotion, and luminous balance.",
     "description": "Kedar is serene and devotional, with enough spaciousness to support both meditation and calm evening unwinding. Its devotional character does not press — it simply illuminates.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/FnHlI4ZqAX4",
     "featured": false,
     "relatedRagas": ["yaman", "bihag", "hameer"]
   },
@@ -411,7 +411,7 @@
     "bestFor": ["Sleep", "Deep stillness", "Stress release", "Late-night unwinding"],
     "shortDescription": "Profound, grave, and one of the strongest night ragas for deep rest.",
     "description": "Darbari carries depth, weight, and profound stillness. It is ideal for late-night listening, deep rest, and easing the mind into sleep. One of the most revered and powerful ragas in the entire Hindustani tradition.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/_wZFBrxf7gM",
     "featured": true,
     "relatedRagas": ["bageshree", "malkauns", "chandrakauns"]
   },
@@ -427,7 +427,7 @@
     "bestFor": ["Deep night meditation", "Sleep", "Stillness", "Mystical immersion"],
     "shortDescription": "A deep-night raga of elemental depth and dark stillness.",
     "description": "Malkauns is slow-burning, hypnotic, and powerful. It is one of the strongest ragas for deep-night inwardness and profound quiet — a raga that does not ask permission to go deep.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/JRh9jIs6yAM",
     "featured": true,
     "relatedRagas": ["darbari", "chandrakauns", "bageshree"]
   },
@@ -475,7 +475,7 @@
     "bestFor": ["Meditation", "Prayer", "Emotional release", "Sleep", "Stillness"],
     "shortDescription": "A timeless raga of farewell, devotion, and emotional release.",
     "description": "Bhairavi carries surrender, pathos, and a rare ability to dissolve emotional tension. It is one of the broadest and most versatile entry points in the entire library — heard at any hour, in any mood, it finds you.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/i0XlSs_qxCI",
     "featured": true,
     "relatedRagas": ["kafi", "jaunpuri", "darbari"]
   },
@@ -491,7 +491,7 @@
     "bestFor": ["Focus", "Study", "Reading", "Calm work"],
     "shortDescription": "Grounded, natural, and ideal for sustained concentration.",
     "description": "Kafi allows attention to settle without strain. It is one of the strongest all-day ragas for focus, reading, and gentle concentration — natural, earthy, and entirely without artifice.",
-    "youtubeUrl": "",
+    "youtubeUrl": "https://youtu.be/XB_l2gIsgg8",
     "featured": true,
     "relatedRagas": ["bhimpalasi", "bihag", "bhairavi"]
   },
