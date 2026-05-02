@@ -3,7 +3,13 @@ import type { Raga } from './types'
 
 export type { Raga }
 
-const allRagas: Raga[] = (ragasRaw as any[]).map(r => ({
+type RagaSource = Omit<Raga, 'youtubeUrl' | 'featured' | 'relatedRagas' | 'isLive'> & {
+  youtubeUrl?: string
+  featured?: boolean
+  relatedRagas?: string[]
+}
+
+const allRagas: Raga[] = (ragasRaw as RagaSource[]).map(r => ({
   slug: r.slug,
   name: r.name,
   timeOfDay: r.timeOfDay,

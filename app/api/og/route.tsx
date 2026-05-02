@@ -8,8 +8,8 @@ export async function GET(req: NextRequest) {
   const ragaSlug = searchParams.get('raga')
   const page = searchParams.get('page')
 
-  let title = 'Indian Classical Meditation Music'
-  let subtitle = 'A growing library of 14 ragas'
+  let title = 'Learn Indian Raga Basics'
+  let subtitle = 'Time, mood, rasa, and structure'
 
   if (ragaSlug) {
     const name = ragaSlug
@@ -17,16 +17,16 @@ export async function GET(req: NextRequest) {
       .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ')
     title = `Raga ${name}`
-    subtitle = 'Meditation Soundscape'
+    subtitle = 'Raga learning guide'
   } else if (page === 'sleep') {
     title = 'Ragas for Sleep'
-    subtitle = 'Indian Classical Meditation Music'
+    subtitle = 'Learn the late-night raga mood'
   } else if (page === 'morning') {
     title = 'Ragas for Morning Meditation'
-    subtitle = 'Indian Classical Meditation Music'
+    subtitle = 'Learn the morning raga mood'
   } else if (page === 'focus') {
     title = 'Ragas for Focus & Deep Work'
-    subtitle = 'Indian Classical Meditation Music'
+    subtitle = 'Learn raga qualities for attention'
   }
 
   return new ImageResponse(

@@ -1,20 +1,20 @@
 import Link from 'next/link'
 
 const CARDS = [
-  { label: 'For Sleep', description: 'Late-night ragas designed to quiet the mind. Malkauns, Darbari, Bageshree.', href: '/listen/sleep' },
-  { label: 'For Morning Meditation', description: 'Dawn ragas to begin the day in stillness. Bhairav, Lalit, Todi.', href: '/listen/morning' },
-  { label: 'For Focus & Deep Work', description: 'Ragas for concentration and creative work. Yaman, Bihag, Kafi.', href: '/listen/focus' },
-  { label: 'For Evening Calm', description: 'Soft unwinding as the day closes. Yaman, Desh, Kedar.', href: '/mood/calm' },
-  { label: 'For Emotional Release', description: 'Ragas that allow feeling to settle and release. Bhairavi, Jaunpuri, Patdeep.', href: '/mood/emotional-release' },
-  { label: 'For Meditation', description: 'Stillness, awareness, and inner quiet. Bhairav, Todi, Shree.', href: '/mood/meditation' },
+  { label: 'Sleep and night ragas', description: 'Learn why late-night ragas such as Malkauns, Darbari, and Bageshree feel inward and settled.', href: '/listen/sleep' },
+  { label: 'Morning ragas', description: 'Understand dawn ragas such as Bhairav, Lalit, and Todi through time, rasa, and mood.', href: '/listen/morning' },
+  { label: 'Focus and attention', description: 'Explore ragas often associated with clarity, steadiness, and sustained attention.', href: '/listen/focus' },
+  { label: 'Evening calm', description: 'Study ragas that open or soften the evening, including Yaman, Desh, and Kedar.', href: '/mood/calm' },
+  { label: 'Emotional color', description: 'Compare ragas associated with longing, tenderness, devotion, and release.', href: '/mood/emotional-release' },
+  { label: 'Meditative quality', description: 'Learn how stillness emerges through phrase, time, note emphasis, and rasa.', href: '/mood/meditation' },
 ]
 
 export default function FindYourRagaGrid() {
   return (
     <section className="rs-section">
       <div className="rs-container">
-        <p className="rs-section-label">What are you listening for?</p>
-        <h2 className="rs-section-title" style={{ fontSize: '28px' }}>Find the right raga</h2>
+        <p className="rs-section-label">Learn by purpose</p>
+        <h2 className="rs-section-title" style={{ fontSize: '28px' }}>Explore how ragas create mood</h2>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
@@ -35,7 +35,7 @@ export default function FindYourRagaGrid() {
                   {card.description}
                 </p>
                 <span style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-accent)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-                  Explore →
+                  Learn more -&gt;
                 </span>
               </div>
             </Link>
