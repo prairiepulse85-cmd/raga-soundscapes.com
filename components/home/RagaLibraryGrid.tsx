@@ -37,7 +37,7 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
         <p className="rs-section-label">The raga library</p>
         <h2 className="rs-section-title" style={{ fontSize: '28px', marginBottom: '8px' }}>Explore the Ragas</h2>
         <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--rs-hint)', marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-          Arranged by time of day, from pre-dawn to deep night.
+          Arranged by time of day, mood, rasa, and beginner-friendly context.
         </p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center', marginBottom: '40px' }}>

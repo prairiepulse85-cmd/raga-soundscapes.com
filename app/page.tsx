@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import HeroSection from '@/components/home/HeroSection'
 import RagaIntroSection from '@/components/home/RagaIntroSection'
+import RagaBasicsSection from '@/components/home/RagaBasicsSection'
 import FindYourRagaGrid from '@/components/home/FindYourRagaGrid'
 import FeaturedRagasGrid from '@/components/home/FeaturedRagasGrid'
 import BrowseByMoodSection from '@/components/home/BrowseByMoodSection'
@@ -17,7 +18,7 @@ const homeSchema = {
   name: 'Raga Soundscapes',
   url: 'https://ragasoundscapes.com',
   description:
-    'Original Indian classical raga meditation soundscapes for stillness, sleep and focus.',
+    'A beginner-friendly guide to Indian ragas, organized by time, mood, rasa, and structure.',
   publisher: {
     '@type': 'Organization',
     name: 'Raga Soundscapes',
@@ -27,8 +28,8 @@ const homeSchema = {
 }
 
 export const metadata: Metadata = {
-  title: 'Raga Soundscapes — Indian Classical Meditation Music',
-  description: 'Discover Indian classical ragas for meditation, sleep, focus, and stillness. Organised by time of day, mood, and rasa.',
+  title: 'Raga Soundscapes - Learn Indian Raga Basics',
+  description: 'Learn the basics of Indian ragas, including time, mood, rasa, thaat, aroha, avaroha, pakad, vadi, and samvadi.',
 }
 
 export default function HomePage() {
@@ -39,6 +40,7 @@ export default function HomePage() {
       <SchemaMarkup schema={homeSchema} />
       <HeroSection />
       <RagaIntroSection />
+      <RagaBasicsSection />
       <FindYourRagaGrid />
       <FeaturedRagasGrid ragas={featuredRagas} />
       <BrowseByMoodSection />

@@ -5,7 +5,7 @@ export default function FeaturedRagasGrid({ ragas }: { ragas: Raga[] }) {
   return (
     <section className="rs-section" style={{ borderTop: '1px solid var(--rs-border)' }}>
       <div className="rs-container">
-        <p className="rs-section-label">Recommended starting points</p>
+        <p className="rs-section-label">Recommended learning points</p>
         <h2 className="rs-section-title" style={{ fontSize: '28px' }}>Featured Ragas</h2>
         <div style={{
           display: 'grid',

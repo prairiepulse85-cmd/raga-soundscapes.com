@@ -19,10 +19,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ragasoundscapes.com'),
   title: {
-    default: 'Raga Soundscapes — Indian Classical Meditation Music',
+    default: 'Raga Soundscapes - Learn Indian Raga Basics',
     template: '%s | Raga Soundscapes',
   },
-  description: 'Discover Indian classical ragas for meditation, sleep, focus, and stillness. Organised by time of day, mood, and rasa.',
+  description: 'Learn the basics of Indian ragas, organized by time, mood, rasa, and structure.',
   openGraph: {
     siteName: 'Raga Soundscapes',
     type: 'website',
