@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const CARDS = [
-  { label: 'Sleep and night ragas', description: 'Learn why late-night ragas such as Malkauns, Darbari, and Bageshree feel inward and settled.', href: '/listen/sleep' },
+  { label: 'Night and rest context', description: 'Learn why late-night ragas such as Malkauns, Darbari, and Bageshree feel inward and settled.', href: '/listen/sleep' },
   { label: 'Morning ragas', description: 'Understand dawn ragas such as Bhairav, Lalit, and Todi through time, rasa, and mood.', href: '/listen/morning' },
   { label: 'Focus and attention', description: 'Explore ragas often associated with clarity, steadiness, and sustained attention.', href: '/listen/focus' },
   { label: 'Evening calm', description: 'Study ragas that open or soften the evening, including Yaman, Desh, and Kedar.', href: '/mood/calm' },
@@ -14,7 +14,7 @@ export default function FindYourRagaGrid() {
     <section className="rs-section">
       <div className="rs-container">
         <p className="rs-section-label">Learn by purpose</p>
-        <h2 className="rs-section-title" style={{ fontSize: '28px' }}>Explore how ragas create mood</h2>
+        <h2 className="rs-section-title" style={{ fontSize: '30px' }}>Explore how ragas create mood</h2>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
@@ -26,12 +26,12 @@ export default function FindYourRagaGrid() {
             <Link key={card.href} href={card.href} style={{ display: 'block' }}>
               <div
                 className="rs-grid-card"
-                style={{ padding: '24px 20px', textAlign: 'left' }}
+                style={{ padding: '26px 22px', textAlign: 'left', minHeight: '178px' }}
               >
-                <h3 style={{ fontSize: '16px', color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
+                <h3 style={{ fontSize: '18px', color: 'var(--rs-text)', marginBottom: '10px', fontFamily: 'var(--font-cinzel), serif' }}>
                   {card.label}
                 </h3>
-                <p style={{ fontSize: '12px', color: 'var(--rs-muted)', lineHeight: 1.6, marginBottom: '12px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+                <p style={{ fontSize: '14px', color: 'var(--rs-muted)', lineHeight: 1.7, marginBottom: '16px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
                   {card.description}
                 </p>
                 <span style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-accent)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>

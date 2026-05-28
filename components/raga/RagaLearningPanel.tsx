@@ -48,14 +48,14 @@ export default function RagaLearningPanel({ raga }: { raga: Raga }) {
         marginBottom: '18px',
       }}>
         {structureItems.map((item) => (
-          <article key={item.label} className="rs-grid-card" style={{ padding: '18px' }}>
-            <h2 style={{ fontSize: '13px', color: 'var(--rs-text)', marginBottom: '6px', fontFamily: 'var(--font-cinzel), serif' }}>
+          <article key={item.label} className="rs-grid-card" style={{ padding: '20px' }}>
+            <h2 style={{ fontSize: '15px', color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
               {item.label}
             </h2>
-            <p style={{ fontSize: '13px', color: 'var(--rs-muted)', lineHeight: 1.55, marginBottom: '8px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            <p style={{ fontSize: '14px', color: 'var(--rs-muted)', lineHeight: 1.65, marginBottom: '8px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               {item.getValue(raga)}
             </p>
-            <p style={{ fontSize: '11px', color: 'var(--rs-hint)', lineHeight: 1.55, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+            <p style={{ fontSize: '12px', color: 'var(--rs-hint)', lineHeight: 1.65, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
               {item.note}
             </p>
           </article>

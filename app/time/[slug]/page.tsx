@@ -6,16 +6,25 @@ import RagaCard from '@/components/shared/RagaCard'
 import SubscribeCTA from '@/components/SubscribeCTA'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { siteMeta } from '@/data/site-meta'
 
-export async function generateStaticParams() { return getAllTimeCategories().map((time) => ({ slug: timeToSlug(time) })) }
+export async function generateStaticParams() {
+  return getAllTimeCategories().map((time) => ({ slug: timeToSlug(time) }))
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params; const label = slugToLabel(slug)
-  return { title: `${label} Ragas`, description: `Indian classical ragas for ${label.toLowerCase()} listening.` }
+  const { slug } = await params
+  const label = slugToLabel(slug)
+  return {
+    title: `${label} Ragas`,
+    description: `Learn Indian raga basics for ${label.toLowerCase()} listening, including mood, rasa, time, and beginner identity.`,
+    alternates: { canonical: `${siteMeta.siteUrl}/time/${slug}` },
+  }
 }
 
 export default async function TimePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const matchedTime = getAllTimeCategories().find(t => timeToSlug(t) === slug)
+  const matchedTime = getAllTimeCategories().find((t) => timeToSlug(t) === slug)
   if (!matchedTime) notFound()
   const ragas = getRagasByTime(matchedTime)
   const label = slugToLabel(slug)
@@ -25,10 +34,14 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
       <main className="rs-section">
         <div className="rs-container">
           <div style={{ marginBottom: '32px' }}>
-            <Link href="/#ragas" style={{ fontSize: '11px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>← All Ragas</Link>
+            <Link href="/#ragas" style={{ fontSize: '11px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+              &lt;- All Ragas
+            </Link>
           </div>
           <p className="rs-section-label">Browse by time of day</p>
-          <h1 className="rs-section-title" style={{ fontSize: 'clamp(36px, 5vw, 48px)', marginBottom: '8px' }}>{label} Ragas</h1>
+          <h1 className="rs-section-title text-[38px] sm:text-[48px]" style={{ marginBottom: '8px' }}>
+            {label} Ragas
+          </h1>
           <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--rs-hint)', marginBottom: '40px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             {ragas.length} raga{ragas.length !== 1 ? 's' : ''} for {matchedTime.toLowerCase()} listening.
           </p>

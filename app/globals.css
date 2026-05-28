@@ -1,34 +1,53 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-rs-bg: #0D1828;
-  --color-rs-surface: #1A2E50;
-  --color-rs-surface2: #0A1220;
-  --color-rs-text: #EAD898;
-  --color-rs-muted: #8A9EC4;
-  --color-rs-hint: #4A6080;
-  --color-rs-accent: #C8A830;
-  --color-rs-border: #2A3D5C;
-  --color-rs-border2: #1E3050;
+  --color-rs-bg: #0B111C;
+  --color-rs-surface: #13243A;
+  --color-rs-surface2: #101827;
+  --color-rs-panel: #182C42;
+  --color-rs-text: #F3E7BA;
+  --color-rs-muted: #C8D2E4;
+  --color-rs-hint: #91A1BC;
+  --color-rs-accent: #D6AA45;
+  --color-rs-teal: #5FB7A6;
+  --color-rs-rose: #B8786F;
+  --color-rs-border: #2D4260;
+  --color-rs-border2: #1C2A3F;
   --font-cinzel: var(--font-cinzel);
   --font-dm-sans: var(--font-dm-sans);
 }
 
 :root {
-  --rs-bg: #0D1828;
-  --rs-surface: #1A2E50;
-  --rs-surface2: #0A1220;
-  --rs-text: #EAD898;
-  --rs-muted: #8A9EC4;
-  --rs-hint: #4A6080;
-  --rs-accent: #C8A830;
-  --rs-border: #2A3D5C;
-  --rs-border2: #1E3050;
+  --rs-bg: #0B111C;
+  --rs-surface: #13243A;
+  --rs-surface2: #101827;
+  --rs-panel: #182C42;
+  --rs-text: #F3E7BA;
+  --rs-muted: #C8D2E4;
+  --rs-hint: #91A1BC;
+  --rs-accent: #D6AA45;
+  --rs-teal: #5FB7A6;
+  --rs-rose: #B8786F;
+  --rs-border: #2D4260;
+  --rs-border2: #1C2A3F;
 }
 
 html, body {
-  background-color: #0D1828;
-  color: #EAD898;
+  background-color: #0B111C;
+  color: #F3E7BA;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--rs-teal);
+  outline-offset: 3px;
 }
 
 section {
@@ -48,7 +67,7 @@ section {
 .rs-section-label {
   text-align: center;
   font-size: 11px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--rs-accent);
   margin-bottom: 12px;
@@ -64,13 +83,14 @@ section {
 
 /* Raga card hover */
 .rs-raga-card {
-  background: var(--rs-bg);
-  border-left: 2px solid rgba(200, 168, 48, 0.18);
+  min-height: 172px;
+  background: var(--rs-surface2);
+  border-left: 2px solid rgba(214, 170, 69, 0.24);
   transition: border-left-color 0.2s, background 0.2s;
 }
 .rs-raga-card:hover {
-  border-left-color: #C8A830;
-  background: var(--rs-surface2);
+  border-left-color: var(--rs-accent);
+  background: var(--rs-surface);
 }
 
 /* Legacy raga card hover */
@@ -86,11 +106,16 @@ section {
 
 /* Grid card hover */
 .rs-grid-card {
-  background: var(--rs-bg);
+  background: var(--rs-surface2);
   transition: background 0.2s;
 }
 .rs-grid-card:hover {
-  background: var(--rs-surface2);
+  background: var(--rs-surface);
+}
+
+.rs-soft-panel {
+  background: rgba(19, 36, 58, 0.74);
+  border: 1px solid rgba(141, 161, 188, 0.18);
 }
 
 @media (max-width: 768px) {

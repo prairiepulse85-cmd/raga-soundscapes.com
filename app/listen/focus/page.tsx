@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   title: 'Ragas for Focus - Learn Raga Mood and Attention | Raga Soundscapes',
   description:
     'Learn about ragas associated with focus, clarity, and sustained attention, including Yaman, Bihag, Kafi, and Bhimpalasi.',
-  alternates: { canonical: 'https://ragasoundscapes.com/listen/focus' },
+  alternates: { canonical: 'https://www.ragasoundscapes.com/listen/focus' },
   openGraph: {
     title: 'Ragas for Focus - Learn Raga Mood and Attention | Raga Soundscapes',
     description: 'Learn about ragas associated with focus, clarity, and sustained attention.',
-    url: 'https://ragasoundscapes.com/listen/focus',
+    url: 'https://www.ragasoundscapes.com/listen/focus',
     siteName: 'Raga Soundscapes',
     images: [{ url: '/api/og?page=focus', width: 1200, height: 630 }],
   },
@@ -26,13 +26,13 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ragas for Focus | Raga Soundscapes',
-  url: 'https://ragasoundscapes.com/listen/focus',
+  url: 'https://www.ragasoundscapes.com/listen/focus',
   description: 'Ragas associated with focus, clarity, and sustained attention.',
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ragasoundscapes.com' },
-      { '@type': 'ListItem', position: 2, name: 'Ragas for Focus', item: 'https://ragasoundscapes.com/listen/focus' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.ragasoundscapes.com' },
+      { '@type': 'ListItem', position: 2, name: 'Ragas for Focus', item: 'https://www.ragasoundscapes.com/listen/focus' },
     ],
   },
 }

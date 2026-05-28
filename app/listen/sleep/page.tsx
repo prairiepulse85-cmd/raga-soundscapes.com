@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: 'Ragas for Sleep - Learn Late-Night Raga Mood | Raga Soundscapes',
   description:
     'Learn about Indian ragas associated with sleep, night, deep rest, and inward listening, including Malkauns, Darbari, and Bageshree.',
-  alternates: { canonical: 'https://ragasoundscapes.com/listen/sleep' },
+  alternates: { canonical: 'https://www.ragasoundscapes.com/listen/sleep' },
   openGraph: {
     title: 'Ragas for Sleep - Learn Late-Night Raga Mood | Raga Soundscapes',
     description:
       'Learn about Indian ragas associated with sleep, night, deep rest, and inward listening.',
-    url: 'https://ragasoundscapes.com/listen/sleep',
+    url: 'https://www.ragasoundscapes.com/listen/sleep',
     siteName: 'Raga Soundscapes',
     images: [{ url: '/api/og?page=sleep', width: 1200, height: 630 }],
   },
@@ -27,13 +27,13 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ragas for Sleep | Raga Soundscapes',
-  url: 'https://ragasoundscapes.com/listen/sleep',
+  url: 'https://www.ragasoundscapes.com/listen/sleep',
   description: 'Indian ragas associated with sleep, night, and deep rest.',
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ragasoundscapes.com' },
-      { '@type': 'ListItem', position: 2, name: 'Ragas for Sleep', item: 'https://ragasoundscapes.com/listen/sleep' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.ragasoundscapes.com' },
+      { '@type': 'ListItem', position: 2, name: 'Ragas for Sleep', item: 'https://www.ragasoundscapes.com/listen/sleep' },
     ],
   },
 }

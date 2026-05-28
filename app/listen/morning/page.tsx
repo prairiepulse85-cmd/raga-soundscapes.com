@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   title: 'Morning Ragas - Learn Dawn Raga Mood | Raga Soundscapes',
   description:
     'Learn about morning ragas from the Hindustani tradition, including Bhairav, Lalit, Todi, and Ahir Bhairav.',
-  alternates: { canonical: 'https://ragasoundscapes.com/listen/morning' },
+  alternates: { canonical: 'https://www.ragasoundscapes.com/listen/morning' },
   openGraph: {
     title: 'Morning Ragas - Learn Dawn Raga Mood | Raga Soundscapes',
     description: 'Learn about morning ragas from the Hindustani tradition.',
-    url: 'https://ragasoundscapes.com/listen/morning',
+    url: 'https://www.ragasoundscapes.com/listen/morning',
     siteName: 'Raga Soundscapes',
     images: [{ url: '/api/og?page=morning', width: 1200, height: 630 }],
   },
@@ -26,13 +26,13 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Morning Ragas | Raga Soundscapes',
-  url: 'https://ragasoundscapes.com/listen/morning',
+  url: 'https://www.ragasoundscapes.com/listen/morning',
   description: 'Morning ragas from the Hindustani tradition.',
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ragasoundscapes.com' },
-      { '@type': 'ListItem', position: 2, name: 'Morning Ragas', item: 'https://ragasoundscapes.com/listen/morning' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.ragasoundscapes.com' },
+      { '@type': 'ListItem', position: 2, name: 'Morning Ragas', item: 'https://www.ragasoundscapes.com/listen/morning' },
     ],
   },
 }

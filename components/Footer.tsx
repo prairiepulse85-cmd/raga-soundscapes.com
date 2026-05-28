@@ -1,17 +1,35 @@
 import Link from 'next/link'
+import { siteMeta } from '@/data/site-meta'
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#0D1828', borderTop: '1px solid #1E3050', padding: '20px 24px', textAlign: 'center' }}>
-      <p style={{ fontSize: '11px', color: '#2A3D5C', marginBottom: '8px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-        © Raga Soundscapes · ragasoundscapes.com
-      </p>
-      <p style={{ fontSize: '11px', color: '#4A6080', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-        <Link href="/listen/sleep">Sleep Ragas</Link>
-        <span style={{ margin: '0 8px' }}>·</span>
-        <Link href="/listen/morning">Morning Ragas</Link>
-        <span style={{ margin: '0 8px' }}>·</span>
-        <Link href="/listen/focus">Focus Ragas</Link>
+    <footer className="border-t border-rs-border2 bg-rs-bg px-6 py-10 text-center">
+      <div className="mx-auto grid max-w-4xl gap-8 text-left sm:grid-cols-3">
+        <div>
+          <p className="mb-3 font-[family-name:var(--font-cinzel)] text-[15px] text-rs-text">
+            Raga Soundscapes
+          </p>
+          <p className="text-[12px] leading-6 text-rs-muted">
+            A beginner-friendly educational library for learning raga time, mood, rasa, and structure.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 text-[12px] text-rs-muted">
+          <Link href="/#ragas">Raga Library</Link>
+          <Link href="/listen/sleep">Sleep Ragas</Link>
+          <Link href="/listen/morning">Morning Ragas</Link>
+          <Link href="/listen/focus">Focus Ragas</Link>
+        </div>
+        <div className="flex flex-col gap-2 text-[12px] text-rs-muted">
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/terms">Terms</Link>
+          <Link href="/editorial-policy">Editorial Policy</Link>
+          <a href={siteMeta.channelUrl} target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+        </div>
+      </div>
+      <p className="mt-8 border-t border-rs-border2 pt-5 text-[11px] text-rs-hint">
+        (c) Raga Soundscapes - {siteMeta.siteUrl.replace('https://', '')}
       </p>
     </footer>
   )

@@ -1,16 +1,21 @@
 import Link from 'next/link'
+import { siteMeta } from '@/data/site-meta'
 
 export default function SiteHeader() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-bg/90 backdrop-blur-sm border-b border-border">
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="font-[family-name:var(--font-cinzel)] text-[16px] text-text tracking-[0.08em]">
+    <header className="sticky top-0 z-50 border-b border-rs-border2 bg-rs-bg/95 backdrop-blur-sm">
+      <div className="rs-container flex h-16 items-center justify-between gap-5">
+        <Link href="/" className="font-[family-name:var(--font-cinzel)] text-[15px] text-rs-text tracking-[0.08em]">
           Raga Soundscapes
         </Link>
-        <nav className="flex items-center gap-6 text-[13px] font-[family-name:var(--font-dm-sans)] text-muted">
-          <Link href="/#ragas" className="hover:text-text transition-colors">Library</Link>
-          <Link href="/mood/meditation" className="hover:text-text transition-colors hidden sm:block">Moods</Link>
-          <Link href="/time/morning" className="hover:text-text transition-colors hidden sm:block">Times</Link>
+        <nav className="flex items-center gap-4 text-[12px] font-[family-name:var(--font-dm-sans)] text-rs-muted sm:gap-6">
+          <Link href="/#ragas" className="hover:text-rs-text transition-colors">Library</Link>
+          <Link href="/mood/meditation" className="hover:text-rs-text transition-colors hidden sm:block">Moods</Link>
+          <Link href="/time/morning" className="hover:text-rs-text transition-colors hidden sm:block">Times</Link>
+          <Link href="/about" className="hover:text-rs-text transition-colors hidden sm:block">About</Link>
+          <a href={siteMeta.channelUrl} target="_blank" rel="noopener noreferrer" className="text-rs-accent hover:text-rs-text transition-colors">
+            YouTube
+          </a>
         </nav>
       </div>
     </header>

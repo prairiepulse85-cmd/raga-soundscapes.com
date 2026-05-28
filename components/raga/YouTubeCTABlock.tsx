@@ -7,7 +7,7 @@ export default function YouTubeCTABlock({ raga }: { raga: Raga }) {
         Optional inspired listening
       </p>
       <p style={{ fontSize: '12px', color: 'var(--rs-muted)', lineHeight: 1.75, marginBottom: '18px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-        The YouTube channel offers meditation and sleep soundscapes with raga-inspired elements. They are peaceful listening experiences, not strict or formal classical performances.
+        The YouTube channel offers meditative soundscapes inspired by the mood and melodic character of ragas. They are listening experiences, not strict or formal classical performances.
       </p>
       {raga.isLive ? (
         <a href={raga.youtubeUrl} target="_blank" rel="noopener noreferrer"

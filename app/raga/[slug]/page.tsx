@@ -10,6 +10,7 @@ import SubscribeCTA from '@/components/SubscribeCTA'
 import Footer from '@/components/Footer'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import Link from 'next/link'
+import { siteMeta } from '@/data/site-meta'
 
 export async function generateStaticParams() {
   return getAllRagas().map((r) => ({ slug: r.slug }))
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${raga.name} - ${raga.rasa}`,
     description: `${raga.shortDescription} Learn its time, mood, rasa, thaat, and beginner listening identity.`,
-    openGraph: { title: `${raga.name} | Raga Soundscapes`, description: raga.shortDescription, url: `https://ragasoundscapes.com/raga/${raga.slug}` },
+    alternates: { canonical: `${siteMeta.siteUrl}/raga/${raga.slug}` },
+    openGraph: { title: `${raga.name} | Raga Soundscapes`, description: raga.shortDescription, url: `${siteMeta.siteUrl}/raga/${raga.slug}` },
   }
 }
 
@@ -34,12 +36,12 @@ export default async function RagaDetailPage({ params }: { params: Promise<{ slu
 
   const schema = {
     '@context': 'https://schema.org', '@type': 'WebPage',
-    name: `${raga.name} | Raga Soundscapes`, url: `https://ragasoundscapes.com/raga/${raga.slug}`,
+    name: `${raga.name} | Raga Soundscapes`, url: `${siteMeta.siteUrl}/raga/${raga.slug}`,
     description: raga.shortDescription,
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ragasoundscapes.com' },
-      { '@type': 'ListItem', position: 2, name: 'Raga Library', item: 'https://ragasoundscapes.com/#ragas' },
-      { '@type': 'ListItem', position: 3, name: raga.name, item: `https://ragasoundscapes.com/raga/${raga.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteMeta.siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Raga Library', item: `${siteMeta.siteUrl}/#ragas` },
+      { '@type': 'ListItem', position: 3, name: raga.name, item: `${siteMeta.siteUrl}/raga/${raga.slug}` },
     ]},
   }
 
@@ -56,7 +58,7 @@ export default async function RagaDetailPage({ params }: { params: Promise<{ slu
           <p style={{ fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--rs-accent)', marginBottom: '10px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             Raga learning guide
           </p>
-          <h1 style={{ fontSize: 'clamp(36px, 5vw, 48px)', color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
+          <h1 className="text-[38px] sm:text-[48px]" style={{ color: 'var(--rs-text)', marginBottom: '8px', fontFamily: 'var(--font-cinzel), serif' }}>
             {raga.name}
           </h1>
           <p style={{ fontSize: '15px', color: 'var(--rs-muted)', marginBottom: '24px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>

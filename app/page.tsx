@@ -11,25 +11,33 @@ import SubscribeCTA from '@/components/SubscribeCTA'
 import Footer from '@/components/Footer'
 import SchemaMarkup from '@/components/SchemaMarkup'
 import { getAllRagas, getFeaturedRagas } from '@/lib/ragas'
+import { siteMeta } from '@/data/site-meta'
 
 const homeSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Raga Soundscapes',
-  url: 'https://ragasoundscapes.com',
+  url: siteMeta.siteUrl,
   description:
     'A beginner-friendly guide to Indian ragas, organized by time, mood, rasa, and structure.',
   publisher: {
     '@type': 'Organization',
     name: 'Raga Soundscapes',
-    url: 'https://ragasoundscapes.com',
-    sameAs: ['https://youtube.com/@ragasoundscapes'],
+    url: siteMeta.siteUrl,
+    sameAs: [siteMeta.channelUrl],
+  },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteMeta.siteUrl}/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
   },
 }
 
 export const metadata: Metadata = {
   title: 'Raga Soundscapes - Learn Indian Raga Basics',
-  description: 'Learn the basics of Indian ragas, including time, mood, rasa, thaat, aroha, avaroha, pakad, vadi, and samvadi.',
+  description:
+    'Explore a beginner-friendly raga library with time of day, mood, rasa, thaat, aroha, avaroha, pakad, vadi, and samvadi learning notes.',
+  alternates: { canonical: siteMeta.siteUrl },
 }
 
 export default function HomePage() {

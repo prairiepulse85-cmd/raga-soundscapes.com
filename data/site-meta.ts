@@ -1,6 +1,7 @@
 export const siteMeta = {
-  ragaCount: 14,
+  ragaCount: 32,
   channelUrl: 'https://youtube.com/@ragasoundscapes',
-  siteUrl: 'https://ragasoundscapes.com',
+  siteUrl: 'https://www.ragasoundscapes.com',
   channelHandle: '@ragasoundscapes',
+  contactEmail: 'hello@ragasoundscapes.com',
 }

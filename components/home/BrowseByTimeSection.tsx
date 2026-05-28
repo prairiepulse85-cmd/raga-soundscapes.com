@@ -18,15 +18,16 @@ export default function BrowseByTimeSection() {
     <section className="rs-section" style={{ borderTop: '1px solid var(--rs-border)' }}>
       <div className="rs-container">
         <p className="rs-section-label">Browse by time of day</p>
-        <h2 className="rs-section-title" style={{ fontSize: '28px' }}>When are you listening?</h2>
+        <h2 className="rs-section-title" style={{ fontSize: '30px' }}>Browse by time of day</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
           {TIMES.map((time) => (
             <Link key={time.href} href={time.href}
               style={{
                 border: '1px solid var(--rs-border)',
                 color: 'var(--rs-muted)',
-                padding: '10px 20px',
-                fontSize: '13px',
+                background: 'var(--rs-surface2)',
+                padding: '11px 20px',
+                fontSize: '14px',
                 letterSpacing: '0.06em',
                 fontFamily: 'var(--font-dm-sans), sans-serif',
               }}

@@ -6,7 +6,7 @@ export default function BestForList({ items }: { items: string[] }) {
       </p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
         {items.map((item) => (
-          <span key={item} style={{ fontSize: '12px', color: 'var(--rs-muted)', border: '1px solid var(--rs-border)', padding: '4px 14px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
+          <span key={item} style={{ fontSize: '13px', color: 'var(--rs-muted)', background: 'var(--rs-surface2)', border: '1px solid var(--rs-border)', padding: '6px 14px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             {item}
           </span>
         ))}
