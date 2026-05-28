@@ -7,7 +7,7 @@ export default function HeroSection() {
       style={{
         minHeight: '640px',
         backgroundImage:
-          'linear-gradient(90deg, rgba(11,17,28,0.96) 0%, rgba(11,17,28,0.82) 42%, rgba(11,17,28,0.38) 100%), url("/images/raga-library-hero.png")',
+          'linear-gradient(90deg, rgba(23,34,53,0.92) 0%, rgba(23,34,53,0.74) 43%, rgba(23,34,53,0.22) 100%), url("/images/raga-library-hero.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
