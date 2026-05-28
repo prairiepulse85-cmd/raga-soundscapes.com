@@ -41,12 +41,13 @@
 - Removed per-raga YouTube CTAs and clarified that the channel is separate from the educational library.
 - Added stronger homepage metadata and WebSite structured data.
 - Added repo notes so future changes preserve the educational and AdSense-safe positioning.
+- Added per-raga educational notes that explain character, beginner cues, and listening identity without inventing unverified swara notation.
 
 ## Next Content Priorities
 
 1. Verify and add aroha, avaroha, pakad, vadi, and samvadi for the highest-value live ragas first.
 2. Add short source notes or teacher-reviewed notes where possible.
-3. Expand each raga page with 200-400 words of unique explanation: time, mood, beginner listening cues, common confusion, and related ragas.
+3. Continue expanding each raga page with source-backed grammar, common confusions, and related-raga comparisons.
 4. Add one collection page each for evening calm, emotional release, and meditation to match homepage categories.
 5. Keep YouTube calls-to-action generic and away from individual raga claims.
 

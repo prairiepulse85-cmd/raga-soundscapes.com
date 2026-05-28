@@ -15,6 +15,7 @@ Public Readiness Checklist
 --------------------------
 
 - Core library pages: homepage, raga pages, mood pages, time pages, and learning collections.
+- Per-raga educational notes: character, beginner listening cues, and plain-language guidance.
 - Trust pages: About, Contact, Privacy Policy, Terms, Editorial Policy, and Disclaimer.
 - SEO basics: metadata, canonical URLs, robots, sitemap, structured data, and descriptive page copy.
 - AdSense readiness: original educational content, visible contact/trust pages, privacy language for future advertising, and no health or performance guarantees.

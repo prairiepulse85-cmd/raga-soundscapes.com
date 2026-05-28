@@ -10,7 +10,7 @@
     "instruments": ["Sarod", "Tanpura"],
     "bestFor": ["Pre-dawn stillness", "Meditation", "Introspection", "Quiet wakefulness"],
     "shortDescription": "A pre-dawn raga of suspended stillness and inner tension.",
-    "description": "Raga Lalit opens in the hour before sunrise, carrying a contemplative and unresolved mood. It works best when the world is quiet and the mind is not yet fully awake. Its emotional world is one of yearning held in stillness — not resolved, but deeply felt.",
+    "description": "Raga Lalit opens in the hour before sunrise, carrying a contemplative and unresolved mood. It works best when the world is quiet and the mind is not yet fully awake. Its emotional world is one of yearning held in stillness - not resolved, but deeply felt.",
     "featured": false,
     "relatedRagas": ["bhairav", "todi", "ahir-bhairav"]
   },
@@ -25,7 +25,7 @@
     "instruments": ["Sarod", "Sitar", "Tanpura"],
     "bestFor": ["Morning meditation", "Prayer", "Grounding", "Stillness"],
     "shortDescription": "A dawn raga of gravity, devotion, and inner steadiness.",
-    "description": "Raga Bhairav carries a solemn, devotional force. It is ideal for still morning listening and for creating a sense of sacred calm at the start of the day. Its gravity does not press — it steadies.",
+    "description": "Raga Bhairav carries a solemn, devotional force. It is ideal for still morning listening and for creating a sense of sacred calm at the start of the day. Its gravity does not press - it steadies.",
     "featured": true,
     "relatedRagas": ["lalit", "ahir-bhairav", "todi"]
   },
@@ -55,7 +55,7 @@
     "instruments": ["Bansuri", "Sitar", "Tanpura"],
     "bestFor": ["Gentle mornings", "Prayer", "Calm waking", "Meditation"],
     "shortDescription": "A softer dawn raga with warmth, stillness, and quiet gravity.",
-    "description": "Ahir Bhairav balances morning seriousness with a more tender and pastoral feeling. It is ideal for gentle awakening and unhurried stillness — devotional without being austere.",
+    "description": "Ahir Bhairav balances morning seriousness with a more tender and pastoral feeling. It is ideal for gentle awakening and unhurried stillness - devotional without being austere.",
     "featured": false,
     "relatedRagas": ["bhairav", "lalit", "ramkali"]
   },
@@ -70,7 +70,7 @@
     "instruments": ["Sarod", "Sitar", "Tanpura"],
     "bestFor": ["Morning discipline", "Reflection", "Meditation", "Sacred quiet"],
     "shortDescription": "Austere and reflective, with a disciplined morning atmosphere.",
-    "description": "Raga Ramkali evokes austerity, clarity, and spiritual discipline. It is suited to reflective mornings and more inward listening — a raga that demands stillness in return for its depth.",
+    "description": "Raga Ramkali evokes austerity, clarity, and spiritual discipline. It is suited to reflective mornings and more inward listening - a raga that demands stillness in return for its depth.",
     "featured": false,
     "relatedRagas": ["bhairav", "ahir-bhairav", "todi"]
   },
@@ -85,7 +85,7 @@
     "instruments": ["Sarod", "Bansuri", "Tanpura"],
     "bestFor": ["Reflection", "Emotional depth", "Slow morning listening", "Stillness"],
     "shortDescription": "A grave and moving morning raga with deep inward pull.",
-    "description": "Bilaskhani Todi carries a mournful, searching quality. It fits listeners looking for emotional depth rather than brightness — a raga of quiet grief that settles into acceptance.",
+    "description": "Bilaskhani Todi carries a mournful, searching quality. It fits listeners looking for emotional depth rather than brightness - a raga of quiet grief that settles into acceptance.",
     "featured": false,
     "relatedRagas": ["todi", "miyan-ki-todi", "bhairavi"]
   },
@@ -100,7 +100,7 @@
     "instruments": ["Sitar", "Sarod", "Tanpura"],
     "bestFor": ["Intense contemplation", "Morning immersion", "Meditation", "Serious listening"],
     "shortDescription": "A more intense and architecturally weighty morning Todi.",
-    "description": "Miyan ki Todi brings a sharper, more dramatic inwardness. It suits listeners who want a profound and uncompromising meditative mood — austere, focused, and without ornament.",
+    "description": "Miyan ki Todi brings a sharper, more dramatic inwardness. It suits listeners who want a profound and uncompromising meditative mood - austere, focused, and without ornament.",
     "featured": false,
     "relatedRagas": ["todi", "bilaskhani-todi", "multani"]
   },
@@ -115,7 +115,7 @@
     "instruments": ["Bansuri", "Sarod", "Tanpura"],
     "bestFor": ["Emotional release", "Reflective mornings", "Quiet work", "Gentle meditation"],
     "shortDescription": "A raga of tenderness, pathos, and restrained emotional release.",
-    "description": "Jaunpuri carries sadness without heaviness. It can hold reflective listening, soft work, or inward emotional settling. A raga that does not demand attention — it simply accompanies.",
+    "description": "Jaunpuri carries sadness without heaviness. It can hold reflective listening, soft work, or inward emotional settling. A raga that does not demand attention - it simply accompanies.",
     "featured": false,
     "relatedRagas": ["asavari", "bhairavi", "desh"]
   },
@@ -130,7 +130,7 @@
     "instruments": ["Sarod", "Bansuri", "Tanpura"],
     "bestFor": ["Quiet reflection", "Mid-morning introspection", "Meditation", "Emotional softening"],
     "shortDescription": "Detached, inward, and gently severe.",
-    "description": "Asavari has a stripped, restrained emotional quality. It works when the listener wants space rather than sentiment — a raga of elegant withdrawal.",
+    "description": "Asavari has a stripped, restrained emotional quality. It works when the listener wants space rather than sentiment - a raga of elegant withdrawal.",
     "featured": false,
     "relatedRagas": ["jaunpuri", "bhimpalasi", "bhairavi"]
   },
@@ -160,7 +160,7 @@
     "instruments": ["Bansuri", "Sitar", "Tanpura"],
     "bestFor": ["Light work", "Afternoon calm", "Gentle study", "Relaxed listening"],
     "shortDescription": "Soft brightness without strain, good for easeful afternoons.",
-    "description": "Madhmad Sarang offers lightness and balance without becoming decorative. It suits clear but unforced attention — the right raga for unhurried afternoon hours.",
+    "description": "Madhmad Sarang offers lightness and balance without becoming decorative. It suits clear but unforced attention - the right raga for unhurried afternoon hours.",
     "featured": false,
     "relatedRagas": ["brindavani-sarang", "kafi", "bihag"]
   },
@@ -174,8 +174,8 @@
     "thaat": "Kafi",
     "instruments": ["Bansuri", "Sitar", "Tanpura"],
     "bestFor": ["Focus", "Reading", "Creative work", "Afternoon stillness"],
-    "shortDescription": "Warm, inward, and gently yearning — good for focused work.",
-    "description": "Bhimpalasi balances introspection with ease. It is especially suited to afternoon attention, quiet study, and unhurried creative work — a raga that deepens concentration without demanding it.",
+    "shortDescription": "Warm, inward, and gently yearning - good for focused work.",
+    "description": "Bhimpalasi balances introspection with ease. It is especially suited to afternoon attention, quiet study, and unhurried creative work - a raga that deepens concentration without demanding it.",
     "featured": false,
     "relatedRagas": ["kafi", "multani", "bihag"]
   },
@@ -190,7 +190,7 @@
     "instruments": ["Sarod", "Bansuri", "Tanpura"],
     "bestFor": ["Late afternoon reflection", "Meditation", "Slow work", "Stillness"],
     "shortDescription": "A late-afternoon raga with dry depth and inward heat.",
-    "description": "Multani feels sun-soaked, inward, and patient. It rewards slow listening and creates a meditative sense of suspended time — the feeling of late afternoon pressing gently inward.",
+    "description": "Multani feels sun-soaked, inward, and patient. It rewards slow listening and creates a meditative sense of suspended time - the feeling of late afternoon pressing gently inward.",
     "featured": false,
     "relatedRagas": ["bhimpalasi", "miyan-ki-todi", "patdeep"]
   },
@@ -219,7 +219,7 @@
     "thaat": "Kalyan",
     "instruments": ["Sitar", "Tanpura"],
     "bestFor": ["Evening calm", "Elegant listening", "Reading", "Gentle focus"],
-    "shortDescription": "Open, luminous, and expansive — an evening raga of grace.",
+    "shortDescription": "Open, luminous, and expansive - an evening raga of grace.",
     "description": "Yaman is spacious and luminous, with an expansive emotional character. It is one of the most welcoming evening ragas and works beautifully for calm focus, unhurried reading, or a serene transition out of the day.",
     "featured": true,
     "relatedRagas": ["bihag", "kedar", "puriya"]
@@ -235,7 +235,7 @@
     "instruments": ["Sarod", "Tanpura"],
     "bestFor": ["Sunset listening", "Quiet settling", "Emotional depth", "Meditation"],
     "shortDescription": "A sunset raga of intensity, suspension, and inward longing.",
-    "description": "Puriya carries a charged stillness that feels particularly suited to the transition out of day. It works for deep unwinding and serious listening — emotionally intense, but resolving.",
+    "description": "Puriya carries a charged stillness that feels particularly suited to the transition out of day. It works for deep unwinding and serious listening - emotionally intense, but resolving.",
     "featured": false,
     "relatedRagas": ["marwa", "yaman", "darbari"]
   },
@@ -250,7 +250,7 @@
     "instruments": ["Sitar", "Tanpura"],
     "bestFor": ["Transition hours", "Tension release", "Serious reflection", "Sunset stillness"],
     "shortDescription": "Unsettled, searching, and emotionally charged.",
-    "description": "Marwa is one of the most psychologically tense ragas of the twilight hour. It is not comforting, but it is profoundly absorbing — a raga that holds the listener in productive unrest.",
+    "description": "Marwa is one of the most psychologically tense ragas of the twilight hour. It is not comforting, but it is profoundly absorbing - a raga that holds the listener in productive unrest.",
     "featured": false,
     "relatedRagas": ["puriya", "lalit", "shree"]
   },
@@ -265,7 +265,7 @@
     "instruments": ["Sarod", "Sitar", "Tanpura"],
     "bestFor": ["Meditation", "Sunset stillness", "Sacred calm", "Slow evening listening"],
     "shortDescription": "Grave, expansive, and meditative at the edge of evening.",
-    "description": "Raga Shree combines dignity with introspection, giving sunset listening a sacred and inward quality. It arrives like the last light — majestic and unhurried.",
+    "description": "Raga Shree combines dignity with introspection, giving sunset listening a sacred and inward quality. It arrives like the last light - majestic and unhurried.",
     "featured": false,
     "relatedRagas": ["puriya", "marwa", "poorvi"]
   },
@@ -280,7 +280,7 @@
     "instruments": ["Sarod", "Bansuri", "Tanpura"],
     "bestFor": ["Evening meditation", "Deep reflection", "Quiet focus", "Stillness"],
     "shortDescription": "A serious evening raga with introspective gravity.",
-    "description": "Poorvi is measured, grave, and meditative. It suits listeners who want stillness with a sense of inward architecture — a raga that holds space rather than filling it.",
+    "description": "Poorvi is measured, grave, and meditative. It suits listeners who want stillness with a sense of inward architecture - a raga that holds space rather than filling it.",
     "featured": false,
     "relatedRagas": ["shree", "puriya", "darbari"]
   },
@@ -310,7 +310,7 @@
     "instruments": ["Sitar", "Sarod", "Tanpura"],
     "bestFor": ["Night meditation", "Calm listening", "Prayerful mood", "Evening release"],
     "shortDescription": "A night raga of peace, devotion, and luminous balance.",
-    "description": "Kedar is serene and devotional, with enough spaciousness to support both meditation and calm evening unwinding. Its devotional character does not press — it simply illuminates.",
+    "description": "Kedar is serene and devotional, with enough spaciousness to support both meditation and calm evening unwinding. Its devotional character does not press - it simply illuminates.",
     "featured": false,
     "relatedRagas": ["yaman", "bihag", "hameer"]
   },
@@ -355,7 +355,7 @@
     "instruments": ["Bansuri", "Tanpura"],
     "bestFor": ["Night calm", "Sleep preparation", "Emotional softening", "Stillness"],
     "shortDescription": "Intimate, yearning, and ideal for late-night quiet.",
-    "description": "Bageshree carries tenderness and late-night inwardness. It works especially well when the goal is emotional settling and sleep readiness — a raga of quiet, inward longing.",
+    "description": "Bageshree carries tenderness and late-night inwardness. It works especially well when the goal is emotional settling and sleep readiness - a raga of quiet, inward longing.",
     "featured": true,
     "relatedRagas": ["darbari", "patdeep", "malkauns"]
   },
@@ -370,7 +370,7 @@
     "instruments": ["Bansuri", "Sarod", "Tanpura"],
     "bestFor": ["Night meditation", "Stillness", "Dreamlike focus", "Quiet solitude"],
     "shortDescription": "A nocturnal raga of moonlit inwardness and mystery.",
-    "description": "Chandrakauns feels sparse, suspended, and luminous in darkness. It suits deeply inward and quiet listening states — a raga that illuminates without disturbing.",
+    "description": "Chandrakauns feels sparse, suspended, and luminous in darkness. It suits deeply inward and quiet listening states - a raga that illuminates without disturbing.",
     "featured": false,
     "relatedRagas": ["malkauns", "darbari", "bageshree"]
   },
@@ -400,7 +400,7 @@
     "instruments": ["Sarod", "Tanpura"],
     "bestFor": ["Deep night meditation", "Sleep", "Stillness", "Mystical immersion"],
     "shortDescription": "A deep-night raga of elemental depth and dark stillness.",
-    "description": "Malkauns is slow-burning, hypnotic, and powerful. It is one of the strongest ragas for deep-night inwardness and profound quiet — a raga that does not ask permission to go deep.",
+    "description": "Malkauns is slow-burning, hypnotic, and powerful. It is one of the strongest ragas for deep-night inwardness and profound quiet - a raga that does not ask permission to go deep.",
     "featured": true,
     "relatedRagas": ["darbari", "chandrakauns", "bageshree"]
   },
@@ -414,7 +414,7 @@
     "thaat": "Asavari",
     "instruments": ["Sarod", "Sitar", "Tanpura"],
     "bestFor": ["Focused listening", "Late-night alertness", "Alert attention", "Serious study"],
-    "shortDescription": "Late-night energy and force — sharper and more alert than Darbari.",
+    "shortDescription": "Late-night energy and force - sharper and more alert than Darbari.",
     "description": "Adana introduces a more vigorous, alert late-night mood. Unlike the heavy gravity of Darbari, Adana is energised and forceful. Best used when the listener wants focused attention rather than rest.",
     "featured": false,
     "relatedRagas": ["darbari", "malkauns", "shankara"]
@@ -430,7 +430,7 @@
     "instruments": ["Sitar", "Sarod", "Tanpura"],
     "bestFor": ["Poised listening", "Night focus", "Elegant calm", "Late-night reflection"],
     "shortDescription": "Poised, stately, and more upright than deeply sleepy.",
-    "description": "Shankara offers majesty without heaviness, making it a useful entry point for late-night listening that does not pull toward sleep — elegant, alert, and architecturally rich.",
+    "description": "Shankara offers majesty without heaviness, making it a useful entry point for late-night listening that does not pull toward sleep - elegant, alert, and architecturally rich.",
     "featured": false,
     "relatedRagas": ["adana", "kedar", "hameer"]
   },
@@ -445,7 +445,7 @@
     "instruments": ["Bansuri", "Sarod", "Tanpura"],
     "bestFor": ["Meditation", "Prayer", "Emotional release", "Sleep", "Stillness"],
     "shortDescription": "A timeless raga of farewell, devotion, and emotional release.",
-    "description": "Bhairavi carries surrender, pathos, and a rare ability to dissolve emotional tension. It is one of the broadest and most versatile entry points in the entire library — heard at any hour, in any mood, it finds you.",
+    "description": "Bhairavi carries surrender, pathos, and a rare ability to dissolve emotional tension. It is one of the broadest and most versatile entry points in the entire library - heard at any hour, in any mood, it finds you.",
     "featured": true,
     "relatedRagas": ["kafi", "jaunpuri", "darbari"]
   },
@@ -460,7 +460,7 @@
     "instruments": ["Bansuri", "Tanpura"],
     "bestFor": ["Focus", "Study", "Reading", "Calm work"],
     "shortDescription": "Grounded, natural, and ideal for sustained concentration.",
-    "description": "Kafi allows attention to settle without strain. It is one of the strongest all-day ragas for focus, reading, and gentle concentration — natural, earthy, and entirely without artifice.",
+    "description": "Kafi allows attention to settle without strain. It is one of the strongest all-day ragas for focus, reading, and gentle concentration - natural, earthy, and entirely without artifice.",
     "featured": true,
     "relatedRagas": ["bhimpalasi", "bihag", "bhairavi"]
   },
@@ -474,7 +474,7 @@
     "thaat": "To be confirmed",
     "instruments": ["Bansuri", "Tanpura"],
     "bestFor": ["Calm listening", "Meditation", "Stillness"],
-    "shortDescription": "A raga from the Raga Soundscapes library — details being confirmed.",
+    "shortDescription": "A raga from the Raga Soundscapes library - details being confirmed.",
     "description": "Raga Malwa is part of the Raga Soundscapes collection. Full classical details, rasa description, and listening context are being verified and will be added here shortly.",
     "featured": false,
     "relatedRagas": ["bhairavi", "kafi", "desh"],

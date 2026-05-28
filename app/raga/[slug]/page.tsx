@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getAllRagas, getRagaBySlug, getRelatedRagas } from '@/lib/ragas'
 import RagaMetaStrip from '@/components/raga/RagaMetaStrip'
 import RagaLearningPanel from '@/components/raga/RagaLearningPanel'
+import RagaNotesPanel from '@/components/raga/RagaNotesPanel'
 import BestForList from '@/components/raga/BestForList'
 import RelatedRagasGrid from '@/components/raga/RelatedRagasGrid'
 import SubscribeCTA from '@/components/SubscribeCTA'
@@ -67,6 +68,7 @@ export default async function RagaDetailPage({ params }: { params: Promise<{ slu
           <p style={{ fontSize: '15px', color: 'var(--rs-muted)', lineHeight: 1.85, marginBottom: '32px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
             {raga.description}
           </p>
+          <RagaNotesPanel raga={raga} />
           <RagaLearningPanel raga={raga} />
           <BestForList items={raga.bestFor} />
         </div>
