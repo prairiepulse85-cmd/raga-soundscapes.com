@@ -24,7 +24,7 @@ export default function HeroSection() {
             Learn Indian raga basics through time, mood, rasa, thaat, and listening identity.
           </p>
           <p className="mb-8 max-w-[620px] text-[15px] leading-8 text-rs-hint">
-            Use this library to understand each raga before you listen. YouTube links are optional raga-inspired soundscapes, not formal classical performances.
+            Use this library to understand each raga through plain-language educational notes, not as a directory of classical performance links.
           </p>
           <div className="mb-10 flex flex-wrap gap-3">
             <a

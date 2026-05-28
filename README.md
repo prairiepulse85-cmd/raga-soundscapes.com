@@ -7,14 +7,14 @@ Positioning
 -----------
 
 - The website is an informative raga learning library.
-- YouTube links are optional listening companions.
-- Linked music should be described as raga-inspired soundscape material, not strict classical raga performance.
+- The YouTube channel is separate from the raga library and should not be treated as a formal classical raga archive.
+- Individual raga pages should not carry direct YouTube links or imply that channel tracks are exact raga performances.
 - Detailed fields such as aroha, avaroha, pakad, vadi, and samvadi should stay marked as coming soon until verified from a reliable classical source or teacher.
 
 Public Readiness Checklist
 --------------------------
 
-- Core library pages: homepage, raga pages, mood pages, time pages, and listen collections.
+- Core library pages: homepage, raga pages, mood pages, time pages, and learning collections.
 - Trust pages: About, Contact, Privacy Policy, Terms, Editorial Policy, and Disclaimer.
 - SEO basics: metadata, canonical URLs, robots, sitemap, structured data, and descriptive page copy.
 - AdSense readiness: original educational content, visible contact/trust pages, privacy language for future advertising, and no health or performance guarantees.

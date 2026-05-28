@@ -4,7 +4,6 @@ import { getAllRagas, getRagaBySlug, getRelatedRagas } from '@/lib/ragas'
 import RagaMetaStrip from '@/components/raga/RagaMetaStrip'
 import RagaLearningPanel from '@/components/raga/RagaLearningPanel'
 import BestForList from '@/components/raga/BestForList'
-import YouTubeCTABlock from '@/components/raga/YouTubeCTABlock'
 import RelatedRagasGrid from '@/components/raga/RelatedRagasGrid'
 import SubscribeCTA from '@/components/SubscribeCTA'
 import Footer from '@/components/Footer'
@@ -70,7 +69,6 @@ export default async function RagaDetailPage({ params }: { params: Promise<{ slu
           </p>
           <RagaLearningPanel raga={raga} />
           <BestForList items={raga.bestFor} />
-          <YouTubeCTABlock raga={raga} />
         </div>
       </main>
       <RelatedRagasGrid ragas={related} />

@@ -5,7 +5,7 @@ import { siteMeta } from '@/data/site-meta'
 export const metadata: Metadata = {
   title: 'About Raga Soundscapes',
   description:
-    'Learn what Raga Soundscapes publishes, how the raga library is structured, and how YouTube listening links should be understood.',
+    'Learn what Raga Soundscapes publishes, how the raga library is structured, and how the channel is positioned separately.',
   alternates: { canonical: `${siteMeta.siteUrl}/about` },
 }
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
         The website is informational first. It explains concepts such as aroha, avaroha, pakad, vadi, samvadi, thaat, rasa, and time theory in plain language for new listeners.
       </p>
       <p>
-        Some raga pages include optional links to YouTube listening material. Those tracks are raga-inspired soundscapes based on mood and melodic character. They are not presented as strict, formal, or complete classical raga performances.
+        The YouTube channel is separate from this raga library. It should not be understood as a formal classical raga archive, and individual raga pages do not point visitors to raga-specific YouTube tracks.
       </p>
       <p>
         Where detailed notation or classical identity fields have not yet been verified, the site says so directly and leaves those fields marked as coming soon.

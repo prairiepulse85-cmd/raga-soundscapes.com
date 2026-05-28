@@ -56,7 +56,7 @@ export default function MorningPage() {
         </h1>
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>Morning ragas are often understood through their time, gravity, and devotional or inward emotional color. This page introduces the dawn and early morning ragas in plain language for beginners.</p>
-          <p>Use these guides to learn the raga mood and identity first. Any related soundscapes on YouTube are meditative interpretations, not formal classical demonstrations.</p>
+          <p>Use these guides to learn the raga mood and identity first. The library does not attach raga-specific YouTube tracks or present channel soundscapes as formal classical demonstrations.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[12px] mb-12">
           {morningRagas.map((raga) => raga && <RagaCard key={raga.slug} raga={raga} />)}

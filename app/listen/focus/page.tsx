@@ -56,7 +56,7 @@ export default function FocusPage() {
         </h1>
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>Some ragas are especially useful to study through their steadiness, brightness, warmth, or inward pull. This page groups ragas that listeners may associate with focus and sustained attention.</p>
-          <p>The educational guide and the meditative soundscapes are intentionally separate: learn the raga basics here, then explore inspired listening only if it is helpful.</p>
+          <p>This collection is educational. It groups ragas by clarity, steadiness, and attention without pointing visitors to raga-specific YouTube tracks.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[12px] mb-12">
           {focusRagas.map((raga) => raga && <RagaCard key={raga.slug} raga={raga} />)}

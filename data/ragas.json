@@ -11,7 +11,6 @@
     "bestFor": ["Pre-dawn stillness", "Meditation", "Introspection", "Quiet wakefulness"],
     "shortDescription": "A pre-dawn raga of suspended stillness and inner tension.",
     "description": "Raga Lalit opens in the hour before sunrise, carrying a contemplative and unresolved mood. It works best when the world is quiet and the mind is not yet fully awake. Its emotional world is one of yearning held in stillness — not resolved, but deeply felt.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["bhairav", "todi", "ahir-bhairav"]
   },
@@ -27,7 +26,6 @@
     "bestFor": ["Morning meditation", "Prayer", "Grounding", "Stillness"],
     "shortDescription": "A dawn raga of gravity, devotion, and inner steadiness.",
     "description": "Raga Bhairav carries a solemn, devotional force. It is ideal for still morning listening and for creating a sense of sacred calm at the start of the day. Its gravity does not press — it steadies.",
-    "youtubeUrl": "https://youtu.be/VjE8weEE4PQ",
     "featured": true,
     "relatedRagas": ["lalit", "ahir-bhairav", "todi"]
   },
@@ -43,7 +41,6 @@
     "bestFor": ["Contemplation", "Morning listening", "Emotional depth", "Meditation"],
     "shortDescription": "A morning raga of intensity, yearning, and inward pull.",
     "description": "Raga Todi carries a searching and deeply introspective character. It suits quiet morning hours when the listener wants depth rather than comfort.",
-    "youtubeUrl": "https://youtu.be/qYz8UrlL9aM",
     "featured": true,
     "relatedRagas": ["bhairav", "lalit", "miyan-ki-todi"]
   },
@@ -59,7 +56,6 @@
     "bestFor": ["Gentle mornings", "Prayer", "Calm waking", "Meditation"],
     "shortDescription": "A softer dawn raga with warmth, stillness, and quiet gravity.",
     "description": "Ahir Bhairav balances morning seriousness with a more tender and pastoral feeling. It is ideal for gentle awakening and unhurried stillness — devotional without being austere.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["bhairav", "lalit", "ramkali"]
   },
@@ -75,7 +71,6 @@
     "bestFor": ["Morning discipline", "Reflection", "Meditation", "Sacred quiet"],
     "shortDescription": "Austere and reflective, with a disciplined morning atmosphere.",
     "description": "Raga Ramkali evokes austerity, clarity, and spiritual discipline. It is suited to reflective mornings and more inward listening — a raga that demands stillness in return for its depth.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["bhairav", "ahir-bhairav", "todi"]
   },
@@ -91,7 +86,6 @@
     "bestFor": ["Reflection", "Emotional depth", "Slow morning listening", "Stillness"],
     "shortDescription": "A grave and moving morning raga with deep inward pull.",
     "description": "Bilaskhani Todi carries a mournful, searching quality. It fits listeners looking for emotional depth rather than brightness — a raga of quiet grief that settles into acceptance.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["todi", "miyan-ki-todi", "bhairavi"]
   },
@@ -107,7 +101,6 @@
     "bestFor": ["Intense contemplation", "Morning immersion", "Meditation", "Serious listening"],
     "shortDescription": "A more intense and architecturally weighty morning Todi.",
     "description": "Miyan ki Todi brings a sharper, more dramatic inwardness. It suits listeners who want a profound and uncompromising meditative mood — austere, focused, and without ornament.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["todi", "bilaskhani-todi", "multani"]
   },
@@ -123,7 +116,6 @@
     "bestFor": ["Emotional release", "Reflective mornings", "Quiet work", "Gentle meditation"],
     "shortDescription": "A raga of tenderness, pathos, and restrained emotional release.",
     "description": "Jaunpuri carries sadness without heaviness. It can hold reflective listening, soft work, or inward emotional settling. A raga that does not demand attention — it simply accompanies.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["asavari", "bhairavi", "desh"]
   },
@@ -139,7 +131,6 @@
     "bestFor": ["Quiet reflection", "Mid-morning introspection", "Meditation", "Emotional softening"],
     "shortDescription": "Detached, inward, and gently severe.",
     "description": "Asavari has a stripped, restrained emotional quality. It works when the listener wants space rather than sentiment — a raga of elegant withdrawal.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["jaunpuri", "bhimpalasi", "bhairavi"]
   },
@@ -155,7 +146,6 @@
     "bestFor": ["Light focus", "Afternoon reset", "Gentle calm", "Walking meditation"],
     "shortDescription": "Bright yet gentle, with openness and devotional ease.",
     "description": "Brindavani Sarang is airy and uncluttered, making it useful for lightness and a calm afternoon reset. It carries a natural, devotional brightness without becoming decorative.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["madhmad-sarang", "desh", "kafi"]
   },
@@ -171,7 +161,6 @@
     "bestFor": ["Light work", "Afternoon calm", "Gentle study", "Relaxed listening"],
     "shortDescription": "Soft brightness without strain, good for easeful afternoons.",
     "description": "Madhmad Sarang offers lightness and balance without becoming decorative. It suits clear but unforced attention — the right raga for unhurried afternoon hours.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["brindavani-sarang", "kafi", "bihag"]
   },
@@ -187,7 +176,6 @@
     "bestFor": ["Focus", "Reading", "Creative work", "Afternoon stillness"],
     "shortDescription": "Warm, inward, and gently yearning — good for focused work.",
     "description": "Bhimpalasi balances introspection with ease. It is especially suited to afternoon attention, quiet study, and unhurried creative work — a raga that deepens concentration without demanding it.",
-    "youtubeUrl": "https://youtu.be/JxVCcEH2yP4",
     "featured": false,
     "relatedRagas": ["kafi", "multani", "bihag"]
   },
@@ -203,7 +191,6 @@
     "bestFor": ["Late afternoon reflection", "Meditation", "Slow work", "Stillness"],
     "shortDescription": "A late-afternoon raga with dry depth and inward heat.",
     "description": "Multani feels sun-soaked, inward, and patient. It rewards slow listening and creates a meditative sense of suspended time — the feeling of late afternoon pressing gently inward.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["bhimpalasi", "miyan-ki-todi", "patdeep"]
   },
@@ -219,7 +206,6 @@
     "bestFor": ["Quiet emotion", "Reading", "Reflective work", "Soft unwinding"],
     "shortDescription": "Tender and reflective, with a soft emotional pull.",
     "description": "Patdeep is lyrical and emotive without becoming heavy. It is useful when the listener wants warmth, inwardness, and quiet emotional clarity as the afternoon softens toward evening.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["multani", "bageshree", "desh"]
   },
@@ -235,7 +221,6 @@
     "bestFor": ["Evening calm", "Elegant listening", "Reading", "Gentle focus"],
     "shortDescription": "Open, luminous, and expansive — an evening raga of grace.",
     "description": "Yaman is spacious and luminous, with an expansive emotional character. It is one of the most welcoming evening ragas and works beautifully for calm focus, unhurried reading, or a serene transition out of the day.",
-    "youtubeUrl": "https://youtu.be/SAqsOevhJwg",
     "featured": true,
     "relatedRagas": ["bihag", "kedar", "puriya"]
   },
@@ -251,7 +236,6 @@
     "bestFor": ["Sunset listening", "Quiet settling", "Emotional depth", "Meditation"],
     "shortDescription": "A sunset raga of intensity, suspension, and inward longing.",
     "description": "Puriya carries a charged stillness that feels particularly suited to the transition out of day. It works for deep unwinding and serious listening — emotionally intense, but resolving.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["marwa", "yaman", "darbari"]
   },
@@ -267,7 +251,6 @@
     "bestFor": ["Transition hours", "Tension release", "Serious reflection", "Sunset stillness"],
     "shortDescription": "Unsettled, searching, and emotionally charged.",
     "description": "Marwa is one of the most psychologically tense ragas of the twilight hour. It is not comforting, but it is profoundly absorbing — a raga that holds the listener in productive unrest.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["puriya", "lalit", "shree"]
   },
@@ -283,7 +266,6 @@
     "bestFor": ["Meditation", "Sunset stillness", "Sacred calm", "Slow evening listening"],
     "shortDescription": "Grave, expansive, and meditative at the edge of evening.",
     "description": "Raga Shree combines dignity with introspection, giving sunset listening a sacred and inward quality. It arrives like the last light — majestic and unhurried.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["puriya", "marwa", "poorvi"]
   },
@@ -299,7 +281,6 @@
     "bestFor": ["Evening meditation", "Deep reflection", "Quiet focus", "Stillness"],
     "shortDescription": "A serious evening raga with introspective gravity.",
     "description": "Poorvi is measured, grave, and meditative. It suits listeners who want stillness with a sense of inward architecture — a raga that holds space rather than filling it.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["shree", "puriya", "darbari"]
   },
@@ -315,7 +296,6 @@
     "bestFor": ["Light evening calm", "Emotional freshness", "Gentle reading", "Soft reflection"],
     "shortDescription": "Lyrical and open-hearted, with freshness rather than weight.",
     "description": "Desh is welcoming and melodic, often carrying tenderness and uplift without losing inwardness. An accessible evening raga that softens the day without heaviness.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["patdeep", "bihag", "brindavani-sarang"]
   },
@@ -331,7 +311,6 @@
     "bestFor": ["Night meditation", "Calm listening", "Prayerful mood", "Evening release"],
     "shortDescription": "A night raga of peace, devotion, and luminous balance.",
     "description": "Kedar is serene and devotional, with enough spaciousness to support both meditation and calm evening unwinding. Its devotional character does not press — it simply illuminates.",
-    "youtubeUrl": "https://youtu.be/FnHlI4ZqAX4",
     "featured": false,
     "relatedRagas": ["yaman", "bihag", "hameer"]
   },
@@ -347,7 +326,6 @@
     "bestFor": ["Night focus", "Creative work", "Gentle evening listening", "Reading"],
     "shortDescription": "Graceful and lyrical, with softness rather than heaviness.",
     "description": "Bihag offers ease and elegance, making it especially useful for relaxed focus and calm nighttime listening. A raga that asks nothing of the listener except presence.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["yaman", "hameer", "kafi"]
   },
@@ -363,7 +341,6 @@
     "bestFor": ["Elegant evening listening", "Light uplift", "Reading", "Calm attention"],
     "shortDescription": "Radiant and expansive, with celebratory grace.",
     "description": "Hameer is luminous and elevated, useful when the listener wants elegance and breadth rather than introspective weight. A night raga of unusual brightness and poise.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["yaman", "bihag", "kedar"]
   },
@@ -379,7 +356,6 @@
     "bestFor": ["Night calm", "Sleep preparation", "Emotional softening", "Stillness"],
     "shortDescription": "Intimate, yearning, and ideal for late-night quiet.",
     "description": "Bageshree carries tenderness and late-night inwardness. It works especially well when the goal is emotional settling and sleep readiness — a raga of quiet, inward longing.",
-    "youtubeUrl": "https://youtu.be/7nxSNZeqCow",
     "featured": true,
     "relatedRagas": ["darbari", "patdeep", "malkauns"]
   },
@@ -395,7 +371,6 @@
     "bestFor": ["Night meditation", "Stillness", "Dreamlike focus", "Quiet solitude"],
     "shortDescription": "A nocturnal raga of moonlit inwardness and mystery.",
     "description": "Chandrakauns feels sparse, suspended, and luminous in darkness. It suits deeply inward and quiet listening states — a raga that illuminates without disturbing.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["malkauns", "darbari", "bageshree"]
   },
@@ -411,7 +386,6 @@
     "bestFor": ["Sleep", "Deep stillness", "Stress release", "Late-night unwinding"],
     "shortDescription": "Profound, grave, and one of the strongest night ragas for deep rest.",
     "description": "Darbari carries depth, weight, and profound stillness. It is ideal for late-night listening, deep rest, and easing the mind into sleep. One of the most revered and powerful ragas in the entire Hindustani tradition.",
-    "youtubeUrl": "https://youtu.be/_wZFBrxf7gM",
     "featured": true,
     "relatedRagas": ["bageshree", "malkauns", "chandrakauns"]
   },
@@ -427,7 +401,6 @@
     "bestFor": ["Deep night meditation", "Sleep", "Stillness", "Mystical immersion"],
     "shortDescription": "A deep-night raga of elemental depth and dark stillness.",
     "description": "Malkauns is slow-burning, hypnotic, and powerful. It is one of the strongest ragas for deep-night inwardness and profound quiet — a raga that does not ask permission to go deep.",
-    "youtubeUrl": "https://youtu.be/JRh9jIs6yAM",
     "featured": true,
     "relatedRagas": ["darbari", "chandrakauns", "bageshree"]
   },
@@ -443,7 +416,6 @@
     "bestFor": ["Focused listening", "Late-night alertness", "Alert attention", "Serious study"],
     "shortDescription": "Late-night energy and force — sharper and more alert than Darbari.",
     "description": "Adana introduces a more vigorous, alert late-night mood. Unlike the heavy gravity of Darbari, Adana is energised and forceful. Best used when the listener wants focused attention rather than rest.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["darbari", "malkauns", "shankara"]
   },
@@ -459,7 +431,6 @@
     "bestFor": ["Poised listening", "Night focus", "Elegant calm", "Late-night reflection"],
     "shortDescription": "Poised, stately, and more upright than deeply sleepy.",
     "description": "Shankara offers majesty without heaviness, making it a useful entry point for late-night listening that does not pull toward sleep — elegant, alert, and architecturally rich.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["adana", "kedar", "hameer"]
   },
@@ -475,7 +446,6 @@
     "bestFor": ["Meditation", "Prayer", "Emotional release", "Sleep", "Stillness"],
     "shortDescription": "A timeless raga of farewell, devotion, and emotional release.",
     "description": "Bhairavi carries surrender, pathos, and a rare ability to dissolve emotional tension. It is one of the broadest and most versatile entry points in the entire library — heard at any hour, in any mood, it finds you.",
-    "youtubeUrl": "https://youtu.be/i0XlSs_qxCI",
     "featured": true,
     "relatedRagas": ["kafi", "jaunpuri", "darbari"]
   },
@@ -491,7 +461,6 @@
     "bestFor": ["Focus", "Study", "Reading", "Calm work"],
     "shortDescription": "Grounded, natural, and ideal for sustained concentration.",
     "description": "Kafi allows attention to settle without strain. It is one of the strongest all-day ragas for focus, reading, and gentle concentration — natural, earthy, and entirely without artifice.",
-    "youtubeUrl": "https://youtu.be/XB_l2gIsgg8",
     "featured": true,
     "relatedRagas": ["bhimpalasi", "bihag", "bhairavi"]
   },
@@ -507,9 +476,8 @@
     "bestFor": ["Calm listening", "Meditation", "Stillness"],
     "shortDescription": "A raga from the Raga Soundscapes library — details being confirmed.",
     "description": "Raga Malwa is part of the Raga Soundscapes collection. Full classical details, rasa description, and listening context are being verified and will be added here shortly.",
-    "youtubeUrl": "",
     "featured": false,
     "relatedRagas": ["bhairavi", "kafi", "desh"],
-    "_note": "PLACEHOLDER — answer Q1 before Phase 5. Populate: youtubeUrl, thaat, rasa, full description."
+    "_note": "PLACEHOLDER: populate thaat, rasa, and full description after verification."
   }
 ]

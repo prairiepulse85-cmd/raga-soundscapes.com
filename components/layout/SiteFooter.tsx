@@ -32,7 +32,6 @@ export default function SiteFooter() {
               Raga Soundscapes
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12px', color: 'var(--rs-hint)', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-              <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
               <Link href="/#ragas">Full Library</Link>
             </div>
           </div>

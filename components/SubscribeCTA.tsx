@@ -4,10 +4,10 @@ export default function SubscribeCTA() {
       <div style={{ maxWidth: '620px', margin: '0 auto', textAlign: 'center' }}>
         <div style={{ width: '48px', height: '1px', background: 'var(--rs-teal)', margin: '0 auto 24px' }} />
         <h2 style={{ fontSize: '32px', color: 'var(--rs-text)', marginBottom: '16px', fontFamily: 'var(--font-cinzel), serif' }}>
-          Learn first. Listen with context.
+          Continue with the channel.
         </h2>
         <p style={{ fontSize: '15px', color: 'var(--rs-muted)', lineHeight: 1.8, marginBottom: '28px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-          The website explains raga basics. The YouTube channel offers meditative soundscapes inspired by raga moods and motifs, not strict classical performances.
+          This website is a raga education library. The YouTube channel is a separate soundscape channel and should not be treated as a formal classical raga archive.
         </p>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <a href="https://youtube.com/@ragasoundscapes" target="_blank" rel="noopener noreferrer"

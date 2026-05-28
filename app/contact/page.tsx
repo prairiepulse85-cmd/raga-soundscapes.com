@@ -22,7 +22,7 @@ export default function ContactPage() {
         If you are writing about a specific raga page, please include the page URL and the field you are commenting on, such as time of day, thaat, rasa, aroha, avaroha, pakad, or vadi and samvadi.
       </p>
       <p>
-        For YouTube listening content, please remember that the linked music is raga-inspired soundscape material and not a formal classical performance archive.
+        For YouTube-related questions, please remember that the channel is separate from this educational raga library and is not positioned as a formal classical performance archive.
       </p>
     </InfoPage>
   )

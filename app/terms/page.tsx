@@ -18,7 +18,7 @@ export default function TermsPage() {
         The site does not provide professional music instruction, certification, medical advice, therapy, or guaranteed wellness outcomes. Listening suggestions are informational and should be treated as personal preference, not a health claim.
       </p>
       <p>
-        You may link to public pages on this website. Please do not copy substantial portions of the site or represent the YouTube soundscapes as formal classical raga performances.
+        You may link to public pages on this website. Please do not copy substantial portions of the site or represent the YouTube channel as a formal classical raga performance archive.
       </p>
       <p>
         External services such as YouTube have their own terms. Questions can be sent to {siteMeta.contactEmail}.

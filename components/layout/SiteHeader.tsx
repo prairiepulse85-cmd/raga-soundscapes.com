@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { siteMeta } from '@/data/site-meta'
 
 export default function SiteHeader() {
   return (
@@ -13,9 +12,6 @@ export default function SiteHeader() {
           <Link href="/mood/meditation" className="hover:text-rs-text transition-colors hidden sm:block">Moods</Link>
           <Link href="/time/morning" className="hover:text-rs-text transition-colors hidden sm:block">Times</Link>
           <Link href="/about" className="hover:text-rs-text transition-colors hidden sm:block">About</Link>
-          <a href={siteMeta.channelUrl} target="_blank" rel="noopener noreferrer" className="text-rs-accent hover:text-rs-text transition-colors">
-            YouTube
-          </a>
         </nav>
       </div>
     </header>

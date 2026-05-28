@@ -3,8 +3,7 @@ import type { Raga } from './types'
 
 export type { Raga }
 
-type RagaSource = Omit<Raga, 'youtubeUrl' | 'featured' | 'relatedRagas' | 'isLive'> & {
-  youtubeUrl?: string
+type RagaSource = Omit<Raga, 'featured' | 'relatedRagas'> & {
   featured?: boolean
   relatedRagas?: string[]
 }
@@ -21,10 +20,8 @@ const allRagas: Raga[] = (ragasRaw as RagaSource[]).map(r => ({
   bestFor: r.bestFor,
   shortDescription: r.shortDescription,
   description: r.description,
-  youtubeUrl: r.youtubeUrl || '',
   featured: r.featured || false,
   relatedRagas: r.relatedRagas || [],
-  isLive: Boolean(r.youtubeUrl && r.youtubeUrl.trim().length > 0),
 }))
 
 // Backward-compatible export for /listen/ pages

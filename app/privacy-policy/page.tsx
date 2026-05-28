@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
         If advertising is enabled in the future, advertising partners such as Google may use cookies or similar technologies to serve and measure ads. Visitors can manage ad personalization through their browser settings and Google ad settings.
       </p>
       <p>
-        External links, including YouTube links, are governed by the privacy policies of those services. Contact us at {siteMeta.contactEmail} for privacy questions.
+        External links are governed by the privacy policies of those services. Contact us at {siteMeta.contactEmail} for privacy questions.
       </p>
     </InfoPage>
   )

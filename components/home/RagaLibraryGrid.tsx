@@ -46,7 +46,7 @@ export default function RagaLibraryGrid({ ragas }: { ragas: Raga[] }) {
               Explore the Ragas
             </h2>
             <p style={{ maxWidth: '620px', fontSize: '15px', color: 'var(--rs-muted)', lineHeight: 1.8, fontFamily: 'var(--font-dm-sans), sans-serif' }}>
-              Filter by time, mood, name, thaat, rasa, or instrument. Each page is written as a learning guide first, with inspired listening links only where available.
+              Filter by time, mood, name, thaat, rasa, or instrument. Each page is written as a raga learning guide, without per-raga performance-link claims.
             </p>
           </div>
           <p style={{ color: 'var(--rs-hint)', fontSize: '13px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>

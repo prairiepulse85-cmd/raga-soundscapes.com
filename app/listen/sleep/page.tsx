@@ -57,7 +57,7 @@ export default function SleepPage() {
         </h1>
         <div className="text-[15px] font-[family-name:var(--font-dm-sans)] text-rs-muted leading-[1.85] mb-10 space-y-4">
           <p>In the Hindustani tradition, some ragas are associated with late night and deep inwardness. This page helps beginners understand the mood, time, and emotional color of ragas often connected with rest.</p>
-          <p>The YouTube channel may offer meditative soundscapes inspired by these moods, but this page is primarily a learning guide, not a claim of formal classical performance.</p>
+          <p>This page is a learning guide for understanding raga mood and time context. It does not claim that any channel track is a formal classical raga performance.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[12px] mb-12">
           {sleepRagas.map((raga) => raga && <RagaCard key={raga.slug} raga={raga} />)}

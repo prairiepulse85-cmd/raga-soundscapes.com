@@ -13,13 +13,13 @@ export default function RagaCard({ raga }: { raga: Raga }) {
             fontSize: '10px',
             letterSpacing: '0.08em',
             textTransform: 'uppercase',
-            color: raga.isLive ? 'var(--rs-teal)' : 'var(--rs-hint)',
-            border: `1px solid ${raga.isLive ? 'var(--rs-teal)' : 'var(--rs-border)'}`,
+            color: 'var(--rs-hint)',
+            border: '1px solid var(--rs-border)',
             padding: '3px 8px',
             flexShrink: 0,
             fontFamily: 'var(--font-dm-sans), sans-serif',
           }}>
-            {raga.isLive ? 'Listen' : 'Guide'}
+            Guide
           </span>
         </div>
         <p style={{ fontSize: '12px', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--rs-hint)', marginBottom: '8px', fontFamily: 'var(--font-dm-sans), sans-serif' }}>

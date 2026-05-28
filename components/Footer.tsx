@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { siteMeta } from '@/data/site-meta'
 
 export default function Footer() {
   return (
@@ -25,11 +24,10 @@ export default function Footer() {
           <Link href="/privacy-policy">Privacy Policy</Link>
           <Link href="/terms">Terms</Link>
           <Link href="/editorial-policy">Editorial Policy</Link>
-          <a href={siteMeta.channelUrl} target="_blank" rel="noopener noreferrer">YouTube Channel</a>
         </div>
       </div>
       <p className="mt-8 border-t border-rs-border2 pt-5 text-[11px] text-rs-hint">
-        (c) Raga Soundscapes - {siteMeta.siteUrl.replace('https://', '')}
+        (c) Raga Soundscapes - www.ragasoundscapes.com
       </p>
     </footer>
   )

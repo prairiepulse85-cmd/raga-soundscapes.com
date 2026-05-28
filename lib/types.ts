@@ -10,8 +10,6 @@ export interface Raga {
   bestFor: string[]
   shortDescription: string
   description: string
-  youtubeUrl: string
   featured: boolean
   relatedRagas: string[]
-  isLive?: boolean
 }

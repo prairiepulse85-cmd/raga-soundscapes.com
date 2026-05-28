@@ -8,8 +8,8 @@ const POINTS = [
     text: 'Move through the library by time of day, emotional color, or beginner listening goal.',
   },
   {
-    label: 'Listen carefully',
-    text: 'Use optional YouTube links as raga-inspired soundscapes after reading the guide.',
+    label: 'Stay educational',
+    text: 'Use the raga pages as learning notes rather than as claims about linked performances.',
   },
 ]
 
